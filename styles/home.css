@@ -1,0 +1,380 @@
+@charset "UTF-8";
+
+/* Home */
+.bordered-div {
+  border: 1.5px solid black;
+}
+.banner {
+  padding-block: 10% 6%;
+  padding-inline: 10% 5%;
+  position: relative; 
+}
+.banner h2 {
+  color: #D6A9B0;
+}
+.banner .banner-image {
+  width: 80%;
+  display: block;
+  margin-inline-start: 5%;
+  /*margin-inline: auto;*/
+}
+.banner .row {
+  align-items: center;
+}
+.banner p {
+  font-size: 1.4rem;
+}
+.banner .details {
+  background: #FCD979 0% 0% no-repeat padding-box;
+  /*padding: 2% 3%;*/
+  /*width: 22%;*/
+  padding: 0.5% 2%;
+  width: 23%;
+  position: absolute;
+  /*right: 17.4%;*/
+  bottom: 10.3%;
+  right: 18.4%;
+}
+.banner .details h2 {
+  font-size: 1.1rem;
+  color: #282828;
+}
+.banner .details h1 {
+  font-size: 1.6rem;
+  color: #282828;
+}
+.banner .details a {
+  font-family: "mont-light";
+  text-decoration: none;
+  letter-spacing: 0px;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  color: #282828;
+  display: flex;
+  align-items: anchor-center;
+  gap: 4%;
+}
+.banner .details a:hover {
+  text-decoration: underline;
+}
+.details img {
+  width: 7%;
+}
+.details .row {
+  gap: 3%;
+  align-items: center;
+}
+.banner .play {
+  width: 10%;
+}
+
+.what-is {
+  padding-block: 7%;
+  padding-inline: 10% 5%;
+  position: relative;
+  background: #FCD979 0% 0% no-repeat padding-box;
+  border-bottom: 1.5px solid black;
+  border-top: 1.5px solid black;
+}
+.what-is .row {
+  gap: 3%;
+}
+.what-is h1 {
+  margin-block: 0%;
+}
+.what-is button {
+  /*width: 15rem;*/
+}
+.what-is p {
+  margin-block: 6%;
+}
+
+.peace-prosp {
+  background-image: url('/images/new/home/peace-prosp.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  position: relative;
+  width: 90%;
+  aspect-ratio: 40 / 27;
+  padding-block: 5% 0%;
+  padding-inline: 5%;
+  /*border-bottom: 1.5px solid black;*/
+}
+.peace-prosp .row {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 55%;
+}
+.peace-prosp .smaller-heading {
+  margin-inline-end: 10%;
+}
+.peace-prosp .circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(150, 150, 150, 0.4);
+  opacity: 1;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  right: 3%;
+}
+.circle-left {
+  z-index: 2;
+}
+.circle-right {
+  margin-left: -5%; 
+  z-index: 1;
+}
+.circle-text {
+  font-size: 1.8rem;
+  padding: 0 10px;
+  color: #FCD979;
+}
+.intersection-text {
+  font-size: 1.8rem;
+  color: #FCD979;
+  position: absolute;
+  transform: translateX(1510%);
+  /*right: 31%;*/
+  z-index: 3;
+  pointer-events: none;
+}
+
+.experience h1, .experience h2 {
+  padding-inline-start: 5%;
+}
+.experience h2 {
+  margin-block-start: 20%;
+}
+.experience .begin-experience {
+  width: 100%;
+  height: 100%;
+  border-right: 1.5px solid black;
+}
+.experience img {
+  width: 100%;
+  height: 100%;
+}
+.experience .w-331 {
+  width: 33.1%;
+}
+.experience .row, .experience .row-rev, .experience .row-row {
+  border-bottom: 1.5px solid black;
+}
+.yellow-bg, .pink-bg, .green-bg, .beige-bg {
+  position: relative;
+  padding-inline-start: 5%;
+  width: 28%;
+}
+.yellow-bg {
+  background: #FCD979 0% 0% no-repeat padding-box;
+  border-left: 1.5px solid black;
+}
+.pink-bg {
+  background: #D6A9B0 0% 0% no-repeat padding-box;
+  border-left: 1.5px solid black;
+}
+.green-bg {
+  background: #9BB885 0% 0% no-repeat padding-box;
+  border-left: 1.5px solid black;
+}
+.beige-bg {
+  background: #EADAC5 0% 0% no-repeat padding-box;
+  border-right: 1.5px solid black;
+}
+.box-text {
+  position: absolute;
+  bottom: 10%;
+  width: 65%;
+}
+.right-border {
+  border-right: 1.5px solid black;
+}
+.left-border {
+  border-left: 1.5px solid black;
+}
+
+.va {
+  background-image: url('/images/new/home/va.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 960 / 691;
+  border-bottom: 1.5px solid black;
+}
+.va-para {
+  width: 50%;
+  background: #FCD979 0% 0% no-repeat padding-box;
+  padding-inline: 10% 5%;
+  padding-block: 2%;
+  position: absolute;
+  bottom: 5%;
+}
+.va-para .btn-transp {
+  margin-block: 3%;
+  /*width: 12rem;*/
+}
+.va-para h1 {
+  margin-block: 3%;
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* Home page */
+  .banner {
+    padding-block: 15% 10%;
+    padding-inline: 6%;
+    border-top: 0;
+  }
+  .banner p {
+    font-size: 1.1rem;
+  }
+  .banner h1 {
+    margin-block-start: 8%;
+  }
+  .banner h2 {
+    margin-block: 10%;
+    font-family: "mont-mono-med";
+    font-size: 1rem;
+  }
+  .banner .banner-image {
+    width: 100%;
+    margin-inline-start: 0%;
+  }
+  .banner .details {
+    /*width: 70%;*/
+    /*padding-block: 6%;*/
+    padding-inline: 5% 0%;
+    width: 45%;
+    padding-block: 2%;
+    /*right: 19.1%;*/
+    /*bottom: 4.4%;*/
+    right: 44.1%;
+    bottom: 4.8%;
+  }
+  .banner .details a {
+    font-size: 1rem;
+  }
+  .banner .details h1 {
+    font-size: 1.5rem;
+    margin-block: 5%;
+  }
+  .banner .details h2 {
+    font-size: 1rem;
+    margin-block: 0% 5%;
+  }
+  .details img {
+    margin-block-start: 1%;
+  }
+
+  .what-is {
+    padding-inline: 6%;
+    padding-block: 15%;
+  }
+  .what-is p, .va-para p {
+    margin-block: 6% 4%;
+  }
+  .what-is button {
+    margin-block-start: 5%;
+    /*padding: 3%;*/
+  }
+  .peace-prosp {
+    background-image: url('/images/new/home/peace-prosp-mob.jpg');
+    background-size: 100% auto;
+    width: 100%;
+    height: 78vh;
+    padding-inline: 0%;
+    padding-block: 15% 0%;
+  }
+  .peace-prosp .smaller-heading {
+    position: absolute;
+    top: 52%;
+    margin-inline: 0%;
+    text-align: center;
+    font-size: 2.2rem;
+    width: 100%;
+  }
+  .circle-right {
+    margin-inline-start: -8%;
+  }
+  .circle-text {
+    font-size: 1.2rem;
+  }
+  .circle-right .circle-text {
+    margin-inline-start: 8%;
+  }
+  .intersection-text {
+    font-size: 1.3rem;
+    right: 50%;
+    transform: none;
+    /*top: 17.5%;*/
+  }
+  .peace-prosp .row {
+    flex-direction: row;
+    top: 70%;
+  }
+  .peace-prosp .circle {
+    width: 160px;
+    height: 160px;
+    right: auto;
+  }
+  .experience h2 {
+    margin-block-start: 0%;
+  }
+  .experience h1, .experience h2 {
+    margin-inline-start: 0%;
+    padding-inline-start: 6%;
+  }
+  .experience .w-67 {
+    padding-block: 10% 5%;
+  }
+  .experience img {
+    display: block;
+    object-fit: contain;
+  }
+  .yellow-bg, .pink-bg, .green-bg, .beige-bg {
+    width: 44%;
+    padding-inline-start: 6%;
+  }
+  .yellow-bg {
+    border-top: 0;
+  }
+  .box-text {
+    width: 75%;
+  }
+  .box-text p {
+    /*padding-inline-end: 10%;*/
+  }
+  .box-text h3 {
+    font-size: 1.5rem;
+    margin-block: 2%;
+  }
+  .experience .row-row .w-33, .experience .row-row .w-331, .experience .row-rev .w-33 {
+    width: 50%;
+  }
+  .pink-bg {
+    border-left: 0;
+  }
+  .va {
+    background-image: url('/images/new/home/va-mob.jpg');
+    aspect-ratio: 195 / 196;
+  }
+  .va-para {
+    width: 88%;
+    position: unset;
+    padding-block: 12%;
+    padding-inline: 6%;
+  }
+  .va-para .btn-transp {
+  }
+  .va img {
+    width: 100%;
+  }
+}

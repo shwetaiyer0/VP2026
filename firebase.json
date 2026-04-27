@@ -1,0 +1,40 @@
+{
+  "hosting": {
+    "cleanUrls": true,
+    "public": "./",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+    // "redirects": [
+    //   {
+    //     "source": "index.html",
+    //     "destination": "/index",
+    //     "type": 301
+
+    //   }, {
+    //     "source": "index.html{,/**}",
+    //     "destination": "/index",
+    //     "type": 3011
+
+    //   }, {
+    //     "source": "ng.html",
+    //     "destination": "/ng",
+    //     "type": 301
+
+    //   }, {
+    //     "source": "ng.html{,/**}",
+    //     "destination": "/ng1",
+    //     "type": 301
+
+    //   }
+    // ]
+  }
+}

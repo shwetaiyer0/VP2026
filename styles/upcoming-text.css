@@ -1,0 +1,290 @@
+@charset "UTF-8";
+
+/* Upcoming events - classes page */
+.bordered-div {
+  border: 1.5px solid black;
+}
+.banner {
+  padding-block: 9% 6%;
+  padding-inline: 10% 5%;
+  position: relative;
+  border-bottom: 1.5px solid black;
+}
+
+.banner h2 {
+  color: #D6A9B0;
+}
+.banner .banner-image {
+  width: 80%;
+  display: block;
+  margin-inline-start: 5%;
+  /*margin-inline: auto;*/
+}
+.banner .row-rev-col, .banner .row {
+  align-items: center;
+}
+.banner p {
+  font-size: 1.4rem;
+}
+
+.intersection-text {
+  color: #FCD979;
+  position: absolute;
+  right: 36.5%;
+  top: 30%;
+  z-index: 3;
+  pointer-events: none;
+}
+
+
+/* Upcoming events */
+.banner .btn-yellow {
+  position: fixed;
+  top: 80%;
+  right: 10%;
+  z-index: 1000;
+}
+
+.why-attend {
+}
+.why-attend .yellow-bg {
+  padding-block: 8% 5%;
+  padding-inline: 10%;
+  width: 32%;
+  border-top: 0;
+}
+.why-attend img {
+  width: 100%;
+  height: 100%;
+}
+.why-attend .yellow-bg .row-row {
+  padding-block: 8%;
+}
+
+.clarity-exc {
+  padding-block: 5%;
+  padding-inline: 10%;
+}
+.clarity-exc .row {
+  align-items: center;
+}
+.clarity-exc p {
+  width: 70%;
+  display: block;
+  margin-inline: auto;
+}
+
+.talk-images img {
+  width: 33.3%;
+  border-left: 1.5px solid black;
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+}
+
+.register .yellow-bg, .register .pink-bg {
+  padding-block: 5%;
+  padding-inline: 5%;
+  width: 50%;
+  border-top: 1.5px solid black;
+  border-bottom: 0;
+}
+.yellow-bg {
+  background: #FCD979 0% 0% no-repeat padding-box;
+  border-left: 1.5px solid black;
+}
+.pink-bg {
+  background: #D6A9B0 0% 0% no-repeat padding-box;
+}
+.register .row {
+  border-bottom: 1.5px solid black;
+}
+
+.speaker {
+  padding-block: 10%;
+  background: rgba(234, 218, 197, 0.43) 0% 0% no-repeat padding-box;
+}
+.speaker .row {
+  align-items: center;
+}
+.speaker .w-50 {
+  padding-inline-start: 5%;
+}
+.speaker img {
+  float: right;
+  width: 90%;
+}
+.speaker h2 {
+  margin-block: 10%;
+}
+.speaker p {
+  width: 80%;
+}
+
+/* Upcoming events - FHI */
+.banner h1 {
+  margin-block-start: 0%;
+}
+.banner .smaller-heading {
+  font-size: 2rem;
+  margin-block-start: 5%;
+}
+.banner-class {
+  display: block;
+  margin-inline: auto;
+  width: 100%;
+  z-index: 1;
+}
+.banner-text {
+  position: absolute;
+  top: 40%;
+  left: 42%;
+  width: 18%;
+  z-index: 5;
+}
+.why-study {
+  padding-block: 5%;
+  padding-inline: 10%;
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+}
+.why-study .row {
+  text-align: center;
+  gap: 5%;
+}
+.why-study img {
+  width: 75%;
+  min-height: 230px;
+}
+.speaker .medium-heading {
+  margin-block-start: 0%;
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* Upcoming events - classes page */
+  .banner {
+    padding-block: 20% 10%;
+    padding-inline: 6%;
+  }
+  .border-bottom {
+    border-bottom: 1.5px solid black !important;
+  }
+  .banner .smaller-heading {
+    margin-block-start: 0%;
+  }
+  .banner .w-30 {
+    width: 100%;
+  }
+  .banner-class {
+    margin-block-start: 30%;
+    object-fit: cover;
+    object-position: left;
+    aspect-ratio: 10 / 10;
+  }
+  .banner-text {
+    top: 47%;
+    left: 10%;
+    width: 32%;
+  }
+  .banner .btn-yellow {
+    padding-inline: 6%;
+    top: 88%;
+    right: 23%;
+  }
+
+  .clarity-exc {
+    padding-inline: 6%;
+  }
+  .clarity-exc p {
+    width: 100%;
+  }
+
+  .why-study {
+    padding-inline: 6%;
+    padding-block-end: 10%;
+  }
+
+  .why-attend .yellow-bg {
+    width: 88%;
+    padding-inline: 6%;
+    padding-block: 5% 10%;
+    border-left: 0;
+    border-bottom: 1.5px solid black;
+  }
+  .why-attend .row {
+    flex-direction: column-reverse !important;
+  } 
+  .why-attend img {
+    display: block;
+  }
+
+  .why-study {
+    padding-inline: 5%;
+  }
+  .why-study img {
+    height: auto;
+    width: 100%;
+  }
+  .why-study .row-row {
+    gap: 10%;
+  }
+  .why-study .w-25 {
+    text-align: center;
+    width: 50%;
+  }
+
+  .talk-images .w-50, .talk-images .beige-bg {
+    width: 50%;
+  }
+  .talk-images img {
+    width: 100%;
+    border-bottom: 0;
+    border-top: 0;
+    display: block;
+    object-fit: contain;
+  }
+  .talk-images .row-row {
+    border-bottom: 1.5px solid black;
+  }
+  .left-border {
+    border-left: 1.5px solid black;
+  }
+
+  .speaker {
+    padding-inline: 6%;
+  }
+  .speaker .row {
+    flex-direction: column;
+  }
+  .speaker img {
+    width: 100%;
+    display: block;
+    margin-inline: auto;
+    float: none;
+  }
+  .speaker .w-50 {
+    width: 100%;
+    padding-inline: 0%;
+  }
+  .speaker p {
+    width: 100%;
+    margin-block-start: 5%;
+  }
+  .speaker h2 {
+    margin-block: 5%;
+  }
+  .speaker .medium-heading {
+    margin-block-start: 5%;
+  }
+
+  .register .pink-bg, .register .yellow-bg {
+    width: 100%;
+    border-top: 0;
+    border-left: 0;
+    padding-inline: 6%;
+  }
+  .register .row {
+    border-top: 1.5px solid black;
+  }
+  
+}

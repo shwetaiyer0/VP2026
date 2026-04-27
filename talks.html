@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+   <meta name="description" content="Weekly Sessions | Vedanta Pune">
+   <meta property="og:url" content="https://vedantapune.org/">
+   <meta property="og:type" content="website">
+   <meta property="og:title" content="Weekly Sessions">
+   <meta property="og:description" content="">
+   <meta property="og:image" content="images/OG.png">
+   <meta name="twitter:title" content="Weekly Sessions">
+   <meta name="twitter:description" content="Weekly Sessions | Vedanta Pune">
+   <head>
+      <meta charset="UTF-8">
+      <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NLPP6SC');</script>
+<!-- End Google Tag Manager -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="image_src" href="images/OG.png"> 
+      <link rel="icon" type="image/png" href="images/new/favicon.png"/>
+      <link rel="stylesheet" href="styles/common.css">
+      <link rel="stylesheet" href="styles/talks.css">
+      <title>Introductory Talks</title>
+   </head>
+
+   <body id="main-body">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NLPP6SC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+     <div class="header desktop">
+      <div class="row">
+          <a href="/home.html" ><img class="vip" src="images/vp_b.png"></a>
+          <div class="header-menu desktop">
+            <button class="header-btn"><a  href="/home.html"><span>Home</span></a></button>&nbsp;
+            <button class="header-btn"><a  href="/weekly.html"><span>Weekly Classes</span></a></button>&nbsp;
+            <button class="header-btn"><a  href="/about.html"><span>About</span></a></button>&nbsp;
+          </div>
+      </div>
+    </div>
+    <div class="mobile">
+      <div class="mobile-navbar">
+        <a href="/home.html" class="logo"><img src="images/vp_b.png"></a>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+          <a href="/home.html" class="logo"><img src="images/vp_b.png"\></a>
+          <div class="close-btn" onclick="toggleMenu()">×</div>
+        </div>
+        <a href="/home.html">Home</a>
+        <a href="/weekly.html">Weekly Classes</a>
+        <a href="/about.html">About</a>
+      </div>
+    </div>
+
+    <div class="weekly-banner">
+      <a href="#find-class"><button class="btn-yellow">VEDANTA TALKS IN PUNE</button></a>
+      <h1 class="center white">Learning to Live</h1>
+    </div>
+
+    <div class="study-class">
+      <div class="row">
+        <div class="w-50">
+          <img src="images/new/classes/what.jpg" id="video-trigger">
+        </div>
+        <div class="w-50">
+          <!-- <h1 class="medium-heading">What is a<br>study class?</h1> -->
+          <p>Vedanta educates you about yourself, the world and how the two interact. Its knowledge is relevant - whether you are making major decisions, managing stress, building relationships, or trying to find meaning in life. Above all, Vedanta leads you to the ultimate goal of Self-Realisation.</p>
+        </div>
+      </div>
+    </div>
+    <div class="talk-images desktop">
+      <div class="row">
+        <img src="images/new/classes/class1.jpg">
+        <img src="images/new/classes/class2.jpg">
+        <img src="images/new/classes/class3.jpg">
+      </div>
+    </div>
+    <div class="talk-images mobile">
+      <div class="row-row">
+        <div class="w-50">
+          <img src="images/new/classes/class1.jpg">
+        </div>
+        <div class="beige-bg"></div>
+      </div>
+      <div class="row-row">
+        <div class="beige-bg"></div>
+        <div class="w-50">
+          <img src="images/new/classes/class2.jpg">
+        </div>
+      </div>
+      <div class="row-row">
+        <div class="w-50">
+          <img src="images/new/classes/class3.jpg" class="border-right">
+        </div>
+        <div class="beige-bg"></div>
+      </div>
+    </div>
+
+    <div class="find-class" id="find-class">
+      <div class="row-rev-col border-bottom">
+        <div class="w-50">
+          <div id="map"></div>
+          <div id="classList"></div>
+        </div>
+        <div class="pink-bg">
+          <h1 class="medium-heading">Find a Vedanta<br>Talk near you</h1>
+          <div class="row-row">
+            <h2>FIND BY</h2>
+            <div class="custom-select">
+              <select id="areaDropdown" onchange="filterClasses()">
+                <option value=""> AREA </option>
+                <option value="All">ALL</option>
+                <option value="Aundh">AUNDH</option>
+                <option value="Balewadi">BALEWADI</option>
+                <option value="Baner">BANER</option>
+                <option value="Bhugaon">BHUGAON</option>
+                <option value="Camp">CAMP</option>
+                <option value="Ghorpadi">GHORPADI</option>
+                <option value="Hadapsar">HADAPSAR</option>
+                <option value="Kalyani Nagar">KALYANI NAGAR</option>
+                <option value="Kharadi">KHARADI</option>
+                <option value="Kondhwa">KONDHWA</option>
+                <option value="Koregaon Park">KOREGAON PARK</option>
+                <option value="Mundhwa">MUNDHWA</option>
+                <option value="Pimple Saudagar">PIMPLE SAUDAGAR</option>
+                <option value="Ravet">RAVET</option>
+                <option value="Shivaji Nagar">SHIVAJI NAGAR</option>
+                <option value="Sopan Baug">SOPAN BAUG</option>
+                <option value="Viman Nagar">VIMAN NAGAR</option>
+              </select>
+            </div>
+          </div>
+          <div class="row-row">
+            <div class="w-14"></div>
+            <div class="custom-select">
+              <select id="dayDropdown" onchange="filterClasses()">
+                <option value=""> DAY OF THE WEEK </option>
+                <option value="All">All</option>
+                <option value="Monday">MONDAY</option>
+                <option value="Tuesday">TUESDAY</option>
+                <option value="Wednesday">WEDNESDAY</option>
+                <option value="Thursday">THURSDAY</option>
+                <option value="Friday">FRIDAY</option>
+                <option value="Saturday">SATURDAY</option>
+                <option value="Sunday">SUNDAY</option>
+              </select>
+            </div>
+          </div>
+          <p id="search-message">See below for search results.</p>
+          <!-- <br class="mobile"><h2 class="class-list">DOWNLOAD THE COMPLETE <a href="/StudyClasses.pdf" target="_blank"><span class="mono-med">PUNE CLASS LIST</span></a></h2> -->
+        </div>
+      </div>
+    </div>
+
+    <div id="search-results"></div>
+
+    <div class="footer desktop">
+      <div class="row">
+        <div class="w-80">
+          <a href="/home.html" ><img class="vip" src="images/vp_wy.png"></a><br>
+          <p>Enquiries: +91 70304 07840 | <a href="mailto:info@vedantapune.org" class="email">info@vedantapune.org</a></p>
+          <p>© 2025 Vedanta Cultural Foundation. All rights reserved. <br class="mobile"><a href="/terms-conditions.html" target="_blank" style="font-family:mont-light;">Terms and Conditions</a><span style="color: #FCD979;"> | </span><a href="/privacy-policy.html" target="_blank" style="font-family:mont-light;">Privacy Policy</a></p>
+        </div>
+        <div class="w-20 social">
+          <a href="/home.html">Home</a><br>
+          <a href="#" style="text-decoration: underline;">Introductory Talks</a><br>
+          <a href="/weekly.html">Weekly Classes</a><br>
+          <a href="/about.html">About</a><br><br>
+          <a href="https://www.facebook.com/VedantaInstitutePune"  class="fb" target="_blank"><img src="images/fb.png" alt="Facebook Vedanta Pune"></a>
+          <a href="https://www.instagram.com/vedantapune/"  class="fb" target="_blank"><img src="images/insta.png" alt="Instagram Vedanta Pune"></a>
+          <a href="https://www.linkedin.com/company/vedanta-pune/"class="fb" target="_blank" style="margin-inline-start: 0%;"><img src="images/linkedin.png" alt="Instagram Vedanta Pune"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer mobile">
+      <div class="row">
+        <div class="w-40">
+          <a href="/home.html" ><img class="vip" src="images/vp_wy.png"></a>
+        </div>
+        <div class="w-10"></div>
+        <div class="w-40">
+          <a href="/home.html">Home</a><br><br>
+          <a href="#" style="text-decoration: underline;">Introductory Talks</a><br><br>
+          <a href="/weekly.html">Weekly Classes</a><br><br>
+          <a href="/about.html">About</a><br><br>
+          <div class="social row">
+            <a href="https://www.facebook.com/VedantaInstitutePune"  class="fb" target="_blank"><img src="images/fb.png" alt="Facebook Vedanta Pune"></a>
+            <a href="https://www.instagram.com/vedantapune/"  class="fb" target="_blank"><img src="images/insta.png" alt="Instagram Vedanta Pune"></a>
+            <a href="https://www.linkedin.com/company/vedanta-pune/"class="fb" target="_blank" style="margin-inline-start: 0%;"><img src="images/linkedin.png" alt="Instagram Vedanta Pune"></a>
+          </div>
+        </div>
+      </div>
+      <p>Enquiries: +91 70304 07840 | <a href="mailto:info@vedantapune.org" class="email">info@vedantapune.org</a></p>
+      <p>© 2025 Vedanta Cultural Foundation. All rights reserved. <br class="mobile"><a href="/terms-conditions.html" target="_blank" style="font-family:mont-light;">Terms and Conditions</a><span style="color: #FCD979;"> | </span><a href="/privacy-policy.html" target="_blank" style="font-family:mont-light;">Privacy Policy</a></p>
+    </div>
+
+    <div id="video-popup" class="video-popup">
+      <div class="popup-content">
+        <span class="close-vid-btn">&times;</span>
+        <iframe id="video-frame" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF65Y5n98557GTO61mfiCGpqaSP9X4bpE&callback=initMap" async defer></script>
+    <script src="js/talks.js"></script>
+    <script src="js/common.js"></script>
+   </body>
+</html>

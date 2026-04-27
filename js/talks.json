@@ -1,0 +1,134 @@
+[
+  {
+    "text": "Be your own Mentor",
+    "day": "TUESDAY",
+    "time": "25 Nov | 6 - 7 pm",
+    "area": "SOPAN BAUG",
+    "lat": 18.5160616,
+    "lng": 73.9012077,
+    "location": "Amar Ambience, D Building, Flat No 901, Sopan Baug",
+    "contact": "Maneesha - 9326152474",
+    "youth": false
+  },
+  {
+    "text": "The Ultimate Guide",
+    "day": "SATURDAY",
+    "time": "22 Nov | 10 - 11 am",
+    "area": "KHARADI",
+    "lat": 18.5486854,
+    "lng": 73.9543361,
+    "location": "B-302, Eon Waterfront, Phase 1, Kharadi",
+    "contact": "Linestha - 9890909688",
+    "youth": false
+  },
+  {
+    "text": "Freedom for Life",
+    "day": "SATURDAY",
+    "time": "22 Nov | 4 - 5 pm",
+    "area": "KALYANI NAGAR",
+    "lat": 18.5492468,
+    "lng": 73.9031786,
+    "location": "Artsphere, Fourth Floor, North Court building, North Avenue Road 12, Kalyani Nagar",
+    "contact": "Linestha - 9890909688",
+    "youth": false
+  },
+    {
+    "text": "Freedom for Life",
+    "day": "SUNDAY",
+    "time": "23 Nov | 3 - 4 pm",
+    "area": "KALYANI NAGAR",
+    "lat": 18.5492468,
+    "lng": 73.9031786,
+    "location": "E-403 Lunkad Skylounge, Kalyani Nagar ",
+    "contact": "Namrata - 9967630520",
+    "youth": true
+  },
+  {
+    "text": "The Ultimate Guide",
+    "day": "SATURDAY",
+    "time": "22 Nov | 6 - 7 pm",
+    "area": "PIMPLE SAUDAGAR",
+    "lat": 18.5925754,
+    "lng": 73.8022421,
+    "location": "Sai Baba Temple, Sri Tara Ma Ashram, Pimple Saudagar",
+    "contact": "Madhu - 9373311754",
+    "youth": false
+  },
+  {
+    "text": "Grow with the Gita",
+    "day": "SUNDAY",
+    "time": "23 Nov | 8:15 - 9:30 am",
+    "area": "SHIVAJI NAGAR",
+    "lat": 18.5303454,
+    "lng": 73.8518746,
+    "location": "Hardas Heart Care, 5th Floor, Fortune Plaza, Thube Park (Lane before Sancheti Hospital), Shivaji Nagar",
+    "contact": "Sujatha - 7972812056",
+    "youth": false
+  },
+  {
+    "text": "Grow with the Gita",
+    "day": "SUNDAY",
+    "time": "23 Nov | 8:15 - 9:15 am",
+    "area": "BANER",
+    "lat": 18.555742,
+    "lng": 73.7946702,
+    "location": "Windsor Commerce, 7th floor, near Wadeshwar, Baner",
+    "contact": "Rajeshwari - 9822550162",
+    "youth": false
+  },
+  {
+    "text": "Grow with the Gita",
+    "day": "SUNDAY",
+    "time": "23 Nov | 8:15 - 9:30 am",
+    "area": "CAMP",
+    "lat": 18.5226501,
+    "lng": 73.8789808,
+    "location": "Poona Club, Library Hall, First Floor, 6 Bund Garden Road, Camp",
+    "contact": "Devyani - 9404001863",
+    "youth": false
+  },
+  {
+    "text": "The Ultimate Guide",
+    "day": "SUNDAY",
+    "time": "23 Nov | 9:30 - 10:30 am",
+    "area": "KONDHWA",
+    "lat": 18.4790911,
+    "lng": 73.9082017,
+    "location": "Cloud Nine Society, NIBM P.O Road, Near Nine Hills, Kondhwa",
+    "contact": "Shweta - 9372193930",
+    "youth": false
+  },
+  {
+    "text": "Be your own Mentor",
+    "day": "SUNDAY",
+    "time": "23 Nov | 11 am - 12 noon",
+    "area": "VIMAN NAGAR",
+    "lat": 18.5620352,
+    "lng": 73.9077136,
+    "location": "Trios Coworking Space, Opp. Lemon Tree Hotel, Sakore Nagar, Viman Nagar",
+    "contact": "Gautam - 7030751144",
+    "youth": false
+  },
+  {
+    "text": "Grow with the Gita",
+    "day": "SUNDAY",
+    "time": "23 Nov | 11 am - 12 noon",
+    "area": "KALYANI NAGAR",
+    "lat": 18.5492468,
+    "lng": 73.9031786,
+    "location": "Artsphere, Fourth Floor, North Court building, North Avenue Road 12, Kalyani Nagar",
+    "contact": "Lakshmi - 9890097968",
+    "youth": false
+  },
+  {
+    "text": "Grow with the Gita",
+    "day": "SUNDAY",
+    "time": "23 Nov | 11 am - 12 noon",
+    "area": "AUNDH",
+    "lat": 18.5559353,
+    "lng": 73.807972,
+    "location": "5th floor Varsha court, Plot no 66 Anand Park, Above Lupin Diagnostic center, Aundh",
+    "contact": "Rupal - 8888808841",
+    "youth": false
+  }
+]

@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.thankyou {
+}
+.thankyou .row {
+	align-items: stretch;
+	justify-content: center;
+}
+.thankyou .w-50 {
+	padding-block: 14%;
+	padding-inline: 12%;
+}
+
+@media only screen and (max-width: 768px) {
+
+	h1 {
+		text-align: center;
+	}
+	p {
+		padding-inline: 5%;
+	}
+	.thankyou .row {
+		padding-block: 14% 5%;
+	}
+	.thankyou .w-50 {
+		padding-inline: 10%;
+		width: 80%;
+	}
+	
+}

@@ -1,0 +1,416 @@
+@charset "UTF-8";
+
+.border-bottom {
+  border-bottom: 1.5px solid black;
+}
+.border-right {
+  border-right: 1.5px solid black;
+}
+.beige-bg {
+  background: #EADAC5 0% 0% no-repeat padding-box;
+  opacity: 0.25;
+}
+/* Weekly Classes */
+.weekly-banner {
+  padding-block: 0%;
+  margin-block: 4% 0%;
+  text-align: center;
+  background-image: url('/images/new/classes/banner.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 64 / 33;
+
+}
+.weekly-banner .btn-yellow {
+  background: #D6A9B0 0% 0% no-repeat padding-box;
+  color: #fff;
+  letter-spacing: 2.5px;
+  font-family: "mont-mono-reg" !important;
+  border: 1px solid #282828;
+  border-radius: 53px;
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: 30%;
+}
+.weekly-banner h1 {
+  padding-block-end: 0%;
+  position: absolute;
+  transform: translateX(40%);
+  bottom: 5%;
+}
+
+.study-class {
+  padding-block: 10%;
+  padding-inline: 10% 5%;
+  background-color: #FCD979;
+  border-bottom: 1.5px solid black;
+  border-top: 1.5px solid black;
+}
+.study-class p {
+
+}
+.study-class img {
+  width: 100%;
+  cursor: pointer;
+}
+.study-class .w-50 {
+  padding-inline-end: 5%;
+}
+.talk-images img {
+  width: 33.3%;
+  border-left: 1.5px solid black;
+}
+
+/* Youtube video popup */
+.video-popup {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+.popup-content {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  background: #000;
+  padding: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.close-vid-btn {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+}
+#video-frame {
+  width: 100%;
+  height: 450px;
+  display: block;
+}
+@media (max-width: 600px) {
+  #video-frame {
+    height: 250px;
+  }
+}
+
+
+.speakers {
+  padding-block: 10%;
+  padding-inline: 10% 5%;
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+}
+.speakers .row {
+  align-items: center;
+}
+.speakers p {
+  width: 80%;
+}
+.speakers img {
+  width: 90%;
+  display: block;
+  margin-inline: auto;
+}
+
+.find-class {
+}
+.find-class .pink-bg {
+  background: #D6A9B0 0% 0% no-repeat padding-box;
+  border-left: 1.5px solid black;
+  padding-inline-start: 5%;
+  padding-block: 0% 2%;
+  width: 45%;
+}
+.pink-bg .row-row {
+  margin-block: 2%;
+}
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+  width: 40%;
+}
+.custom-select select {
+  appearance: none;           
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 8px 15px;
+  margin-bottom: 3%;
+  margin-inline-start: 3%; 
+  font-size: 1rem;
+  width: 100%;
+  letter-spacing: 4px;
+  font-family: "mont-mono-med";
+  border: 1px solid #282828;
+  border-radius: 53px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+.custom-select::after {
+  content: "▼";
+  position: absolute;
+  top: 25%;
+  right: 2%;
+  pointer-events: none;
+  font-size: 1rem;
+  color: #282828;
+}
+.custom-select option {
+  background-color: #FFF;
+  letter-spacing: 4px;
+  color: #282828;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "mont-mono-med";
+  border-bottom: 1px solid #282828;
+  padding: 10px;
+}
+.find-class iframe, #map { 
+  width: 100%; 
+  height: 100%; 
+  border: 0; 
+}
+.find-class h2 {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-block: 1%;
+}
+.class-list {
+  padding-block-start: 10%;
+}
+.find-class a {
+  color: #282828;
+}
+
+.youth {
+  background: #FCDA79 0% 0% no-repeat padding-box;
+  padding-block: 3% 5%;
+  padding-inline: 10%;
+}
+.youth p {
+  width: 80%;
+  display: block;
+  margin-inline: auto;
+}
+
+/* Display classes search results */
+#search-results {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  border-bottom: 1.5px solid #000;
+  padding-block: 3% 10%;
+  padding-inline: 10%;
+}
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  width: 100%;
+  /*max-width: 1000px;*/
+}
+.class-card {
+  padding-inline: 5%;
+  padding-block: 7%;
+  box-sizing: border-box;
+  color: #282828;
+  transition: transform 0.2s ease;
+  position: relative;
+}
+#search-results h1 {
+  text-align: center;
+}
+.class-card h2 {
+  font-size: 0.9rem;
+  letter-spacing: -1px;
+  color: #282828;
+}
+.class-card h3 {
+  font-family: 'mont-reg' !important;
+  margin-block: 2rem 4rem;
+}
+.class-card .contact {
+  margin-block: 4rem 2rem;
+}
+
+.class-card:nth-child(odd) {
+  color: white;
+}
+
+.class-card:hover {
+  transform: scale(1.02);
+}
+.youth-badge {
+  position: absolute;
+  bottom: 0rem;
+  left: 0rem;
+  background-color: #FCDA79;
+  padding: 0.3rem;
+  width: 70%;
+  margin: 0;
+  text-align: center;
+}
+
+.class-card img {
+  width: 100%;
+  display: block;
+}
+.youth .class-card img {
+  width: 220px;
+  /*height: 147px;*/
+  height: 220px;
+  object-fit: cover;
+}
+.youth .results-grid {
+  padding-block-start: 5%;
+  gap: 5%;
+}
+.youth .results-grid .class-card {
+  text-align: center !important;
+}
+.youth .results-grid p {
+  width: 100%;
+}
+.youth .results-grid h3 {
+  margin-block: 1.5rem;
+}
+.youth .results-grid .contact {
+  margin-block: 1rem;
+}
+.youth .medium-heading {
+  margin-block-end: 2%;
+}
+
+@media only screen and (max-width: 768px) {
+  .weekly-banner {
+    background-size: auto 100%;
+    background-position-x: center;
+    height: 55vh;
+    margin-block: 15% 0%;
+  }
+  .weekly-banner h1 {
+    transform: unset;
+    left: 9%;
+    bottom: 3%;
+  }
+  .weekly-banner .btn-yellow {
+    width: 73%;
+    padding-inline: 1rem;
+    letter-spacing: 0px;
+  }
+
+  .study-class {
+    padding-inline: 6%;
+  }
+  .talk-images .w-50, .talk-images .beige-bg {
+    width: 50%;
+  }
+  .talk-images img {
+    width: 100%;
+    border-bottom: 0;
+    border-top: 0;
+    display: block;
+    object-fit: contain;
+  }
+  .talk-images .row-row {
+    border-bottom: 1.5px solid black;
+  }
+
+  .speakers {
+    padding-inline: 6%;
+    border-top: 0;
+  }
+  .speakers img {
+    padding-block-start: 5%;
+    width: 100%;
+  }
+  .speakers p {
+    width: 100%;
+  }
+
+  .find-class .pink-bg {
+    width: 100%;
+    padding-inline-start: 6%;
+    padding-block: 5% 10%;
+    border-left: 0;
+  }
+  .find-class h2 {
+    font-size: 0.8rem;
+  }
+  .find-class .row-row {
+    align-items: center;
+  }
+  .class-list {
+    padding-block-start: 5%;
+  }
+  .class-list .bold {
+    font-family: 'mont-mono-med' !important;
+  }
+  .w-14 {
+    width: 4.3rem;
+  }
+  .custom-select {
+    width: 65%;
+  }
+  .custom-select select {
+    letter-spacing: 3px;
+  }
+
+  #search-results {
+    padding-inline: 6%;
+  }
+  .results-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .class-card {
+    padding-block: 5%;
+    min-height: 18rem;
+  }
+  .class-card h3 {
+    margin-block: 1rem 1.5rem;
+    font-size: 1.2rem;
+  }
+  .class-card h2 {
+    font-size: 0.7rem;
+  }
+  .class-card p {
+    font-size: 0.9rem;
+  }
+  .class-card .contact {
+    margin-block: 1.5rem 0rem;
+  }
+
+  .youth {
+    padding-inline: 6%;
+    padding-block: 10%;
+  }
+  .youth p {
+    width: 100%;
+  }
+  .youth .results-grid {
+    gap: 0%;
+  }
+  .youth .results-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .youth .results-grid .class-card {
+    padding-inline: 0%;
+    padding-block-start: 5%;
+  }
+  .youth .class-card h2 {
+    font-size: 1rem;
+  }
+  .youth .class-card img {
+    width: 100%;
+    margin-inline: auto;
+  }
+}

@@ -1,0 +1,403 @@
+@charset "UTF-8";
+
+/* Upcoming events */
+.banner {
+  padding-block: 9.5% 6.5%;
+  padding-inline: 10% 5%;
+  position: relative;
+  border-bottom: 1.5px solid black;
+}
+.banner h2 {
+  color: #D6A9B0;
+}
+.banner .banner-image {
+  width: 80%;
+  object-fit: cover;
+}
+.btn-yellow {
+  transition: opacity 0.3s ease;
+}
+.btn-yellow.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+#attend-btn {
+  transition: opacity 240ms ease, transform 240ms ease;
+}
+#attend-btn.attend-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(3px);
+}
+/* Youtube video popup */
+.video-popup {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; 
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+.popup-content {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  background: #000;
+  padding: 0;
+  overflow: hidden;
+}
+.close-vid-btn {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+}
+#youtubeVideo {
+  width: 100%;
+  height: 450px;
+  display: block;
+}
+@media (max-width: 600px) {
+  #youtubeVideo {
+    height: 250px;
+  }
+}
+
+.sash {
+  height: 100%;
+}
+.riyaz {
+  height: 85%;
+}
+.banner .row-rev-col {
+  display: flex;
+  align-items: stretch;
+}
+.banner .w-50 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner p {
+  font-size: 1.4rem;
+}
+.banner .btn-text {
+  display: flex;
+  align-items: center;
+  color: #282828;
+}
+.banner .arrow {
+  width: 2.5%;
+}
+.btn-text img {
+  width: 5%;
+  padding-inline-end: 1%;
+}
+.yellow-bg, .green-bg {
+  position: relative;
+  padding-inline-start: 5%;
+  width: 28%;
+}
+.yellow-bg {
+  background: #FCD979 0% 0% no-repeat padding-box;
+  border-left: 1.5px solid black;
+  border-top: 1.5px solid black;
+}
+.green-bg {
+  background: #9BB885 0% 0% no-repeat padding-box;
+  border-left: 1.5px solid black;
+}
+
+.banner .btn-yellow {
+  position: fixed;
+  top: 81%;
+  right: 10%;
+  z-index: 1000;
+}
+
+.why-attend h1 {
+  margin-inline-start: 5%;
+}
+.why-attend .yellow-bg {
+  padding-block: 5%;
+  padding-inline: 10%;
+  width: 32%;
+  border-top: 0;
+}
+.why-attend img {
+  width: 100%;
+  height: 100%;
+}
+.why-attend .yellow-bg .row-row {
+  padding-block: 5%;
+}
+.why-attend .yellow-bg img {
+  width: 50%;
+  display: block;
+  margin-inline: auto;
+}
+
+.clarity-exc {
+  padding-block: 5%;
+  padding-inline: 10%;
+}
+.clarity-exc .row {
+  align-items: center;
+}
+.clarity-exc p {
+  width: 80%;
+  display: block;
+  margin-inline: auto;
+}
+
+.talk-images img {
+  width: 33.3%;
+  border-left: 1.5px solid black;
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+}
+
+.register .green-bg, .register .yellow-bg, .register .pink-bg {
+  padding-block: 5%;
+  padding-inline: 10%;
+  width: 50%;
+}
+.register .green-bg, .register .yellow-bg {
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+}
+
+.speaker {
+  padding-block: 5%;
+  padding-inline: 10%;
+  background: rgba(234, 218, 197, 0.43) 0% 0% no-repeat padding-box;
+}
+.speaker .row {
+  align-items: center;
+}
+.speaker .w-50 {
+}
+.speaker img {
+  /*float: right;*/
+  width: 80%;
+}
+.speaker h2 {
+  margin-block: 5%;
+}
+.speaker p {
+  width: 85%;
+}
+
+/* Upcoming events - FHI */
+.banner h1 {
+  margin-block-start: 0%;
+}
+.banner .smaller-heading {
+  font-size: 2rem;
+  margin-block-start: 25%;
+}
+.banner-class {
+  display: block;
+  margin-inline: auto;
+  width: 100%;
+  z-index: 1;
+}
+.banner-text {
+  position: absolute;
+  top: 35%;
+  left: 42%;
+  width: 18%;
+  z-index: 5;
+}
+.why-study {
+  padding-block: 5%;
+  padding-inline: 5%;
+}
+.why-study .row {
+  text-align: center;
+}
+.speaker .medium-heading {
+  margin-block-start: 0%;
+}
+
+/* Weekly Classes */
+.weekly-banner {
+  padding-block: 0%;
+  text-align: center;
+  background-image: url('/images/new/classes/banner.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 64 / 33;
+  border-bottom: 1.5px solid black;
+  border-right: 1.5px solid black;
+  border-left: 1.5px solid black;
+
+}
+.weekly-banner .btn-yellow {
+  background: #D6A9B0 0% 0% no-repeat padding-box;
+  color: #fff;
+  letter-spacing: 2.5px;
+  border: 1px solid #282828;
+  border-radius: 53px;
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: 30%;
+}
+.weekly-banner h1 {
+  padding-block-end: 0%;
+  position: absolute;
+  transform: translateX(30%);
+  bottom: 5%;
+}
+
+.study-class {
+  padding-block: 5%;
+  padding-inline: 5%;
+  background-color: #FCD979;
+}
+.study-class p {
+  width: 88%;
+}
+.study-class img {
+  width: 100%;
+}
+.study-class .w-50 {
+  padding-inline-end: 5%;
+}
+
+.speakers {
+  padding-block: 5%;
+  padding-inline: 5%;
+}
+.speakers p {
+  width: 80%;
+}
+.speakers img {
+  width: 90%;
+  display: block;
+  margin-inline: auto;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .banner {
+    padding-block: 20% 5%;
+    padding-inline: 6%;
+  }
+  .banner .banner-image {
+    padding-block: 5%;
+    height: auto;
+  }
+  .banner p {
+    font-size: 1.1rem;
+  }
+  .banner h1 {
+    margin-block: 5%;
+  }
+  .banner h4, .banner h2, .speaker h2 {
+    font-size: 1rem;
+  }
+  .banner a {
+    padding-block: 2%;
+  }
+  .banner .banner-image {
+    width: 100%;
+    margin-inline-start: 0%;
+  }
+  .banner .btn-yellow {
+    padding-inline: 6%;
+    top: 87%;
+    right: 24%;
+  }
+  .banner .btn-text {
+    padding-block-start: 3%;
+  }
+
+  .why-attend h1 {
+    margin-inline-start: 0%;
+  }
+  .why-attend img {
+    display: block;
+  }
+  .why-attend .yellow-bg {
+    width: 88%;
+    padding-inline: 6%;
+  }
+  .why-attend .yellow-bg img {
+    margin-inline: unset;
+  }
+  .why-attend .yellow-bg .row-row {
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+  }
+  .why-attend .row-row .w-25 {
+    width: 20%;
+  }
+  .why-attend .row-row .w-75 {
+    width: 100%;
+  }
+
+
+  .talk-images .w-50, .talk-images .beige-bg {
+    width: 50%;
+  }
+  .talk-images img {
+    width: 100%;
+    border-bottom: 0;
+    border-top: 0;
+    display: block;
+    object-fit: contain;
+  }
+  .talk-images .row-row {
+    border-bottom: 1.5px solid black;
+  }
+
+  .clarity-exc {
+    border-bottom: 1.5px solid black;
+    padding-inline: 6%;
+  }
+  .clarity-exc p {
+    width: 100%;
+  }
+
+  .register .green-bg, .register .yellow-bg {
+    width: 88%;
+    border-top: 0;
+    border-left: 0;
+    padding-inline: 6%;
+  }
+
+
+  .speaker {
+    padding-block: 10%;
+    padding-inline: 6%;
+  }
+  .speaker h2 {
+    margin-block: 5%;
+  }
+  .speaker img {
+    width: 90%;
+    display: block;
+    margin-inline: auto;
+    float: none;
+  }
+  .speaker .w-50 {
+    width: 100%;
+    padding-inline: 0%;
+  }
+  .speaker p {
+    width: 100%;
+  }
+  .speaker .medium-heading {
+    margin-block: 10%;
+  }
+}
