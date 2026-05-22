@@ -25,7 +25,7 @@
     "text": "Bhaja Govindam",
     "day": "TUESDAY",
     "time": "11:15 am - 12:15 pm",
-    "area": "HADAPSAR",
+    "area": "MAGARPATTA",
     "lat": 18.5203525,
     "lng": 73.9226269,
     "location": "D-601, One North, Magarpatta",
@@ -176,17 +176,6 @@
     "youth": false
   },
   {
-    "text": "Vedanta Treatise: The Eternities",
-    "day": "SUNDAY",
-    "time": "10:30 - 11:30 am",
-    "area": "GHORPADI",
-    "lat": 18.52279,
-    "lng": 73.9093456,
-    "location": "Yellow Blossom Society (Clubhouse), BT Kawade Road, Ghorpadi",
-    "contact": "Devyani - 9404001863",
-    "youth": false
-  },
-  {
     "text": "The Fall of the Human Intellect",
     "day": "SUNDAY",
     "time": "10:30 - 11:30 am",
@@ -266,7 +255,7 @@
   {
     "text": "Select English Poems",
     "day": "SUNDAY",
-    "time": "4:30 - 5:30 pm",
+    "time": "9 - 10 am",
     "area": "CHINCHWAD",
     "lat": 18.6518156,
     "lng": 73.756789,

@@ -1,0 +1,502 @@
+@charset "UTF-8";
+
+.banner h1, .clarity-exc h1, .yellow-bg h1, .va h1, .blue-bg h1, .speaker h1, .tradition h1 {
+  margin-block: 0.5rem 2.5rem;
+  font-size: 3rem;
+}
+
+h4 {
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+sup {
+  font-size: 1.5rem;
+}
+.mono-med {
+  font-size: 1.2rem;
+  margin-block: 0%;
+  letter-spacing: 3px;
+}
+
+
+
+.banner {
+  background-image: url('/images/new/gp/banner.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  aspect-ratio: 1920 / 990
+}
+.banner h1 {
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  right: 8%;
+}
+.banner .btn-yellow {
+  background-color: #004C74;
+  color: #fff;
+  position: fixed;
+  top: 81%;
+  right: 5%;
+  z-index: 1000;
+}
+
+.pink-bg {
+  background: #763B45 0% 0% no-repeat padding-box;
+  padding-inline: 10%;
+  padding-block: 10% 0;
+  text-align: center;
+}
+.screening {
+  width: 60%;
+  display: block;
+  margin-inline: auto;
+  padding-block: 6%;
+}
+
+
+.yellow-bg {
+  background: #FCD979 0% 0% no-repeat padding-box;
+  border-bottom: 1.5px solid black;
+  padding-inline: 10%;
+  margin-block-start: -18%;
+  padding-block: 22% 5%;
+  text-align: center;
+}
+.yellow-bg .bold {
+  font-size: 1.5rem;
+}
+.yellow-bg h2 {
+  font-size: 1rem;
+}
+
+.maps-arrow {
+  width: 6%;
+  margin-inline-start: 3%;
+}
+
+.clarity {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  padding-block: 10%;
+  padding-inline: 10%;
+}
+.clarity .row {
+  gap: 5%;
+}
+.clarity p {
+}
+.clarity img {
+	width: 30%;
+  padding-block-start: 15%;
+}
+.vr {
+  width: 1px;
+  background-color: #D6A9B0;
+}
+.quote {
+  background-image: url('/images/new/gp/bg.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding-inline: 20%;
+  padding-block: 10%;
+  aspect-ratio: 320 / 173;
+  position: relative;
+}
+.quote h1 {
+  font-size: 2.5rem;
+}
+.quote-content {
+  position: absolute;
+  top: 45%;
+  width: 60%;
+  text-align: center;
+}
+
+.va {
+  background-image: url('/images/new/yajna/gita.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1920 / 1237;
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+}
+.va-para {
+  width: 30%;
+  background: #FCD979 0% 0% no-repeat padding-box;
+  padding-inline: 10% 5%;
+  padding-block: 4%;
+  position: absolute;
+  bottom: 8%;
+}
+
+.blue-bg {
+	/*background-color: rgba(161, 199, 204, 0.75);*/
+  background-color: #004C74;
+	padding-block: 7%;
+	padding-inline: 10%;
+	border-bottom: 1.5px solid black;
+  text-align: center;
+}
+.blue-bg h1 {
+  color: #EBDAC5;
+}
+.blue-bg h2 {
+  color: #FCD979
+}
+.blue-bg p {
+  color: #fff;
+  width: 75%;
+  display: block;
+  margin-inline: auto;
+  text-align: center;
+}
+.blue-bg sup {
+  font-size: 0.8rem;
+}
+
+.cream-bg {
+  background-color: #EBDAC5;
+  border-right: 1.5px solid black;
+}
+
+.talk-images img {
+  width: 33.3%;
+  border-left: 1.5px solid black;
+}
+
+.speaker {
+  background-color: #FCD979;
+	padding-block: 10%;
+  padding-inline: 10%;
+}
+
+.speaker .row-rev-col {
+  align-items: center;
+}
+.speaker .row {
+  padding-block: 10%;
+  gap: 5%;
+}
+.speaker img {
+  width: 100%;
+  cursor: pointer;
+  display: block;
+  margin-inline: auto;
+}
+.article {
+  width: ;
+}
+
+/* Youtube video popup */
+.video-popup {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; 
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+.popup-content {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  background: #000;
+  padding: 0;
+  overflow: hidden;
+}
+.close-vid-btn {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+}
+#youtubeVideo {
+  width: 100%;
+  height: 450px;
+  display: block;
+}
+@media (max-width: 600px) {
+  #youtubeVideo {
+    height: 250px;
+  }
+}
+
+.tradition {
+	padding-inline-start: 10%;
+}
+.tradition .row-rev-col {
+  align-items: center;
+}
+.tradition p {
+	width: 80%;
+}
+.tradition img {
+	width: 100%;
+  display: block;
+}
+
+.moments {
+  background-color: #FCD979;
+}
+.moments .row {
+  align-items: center;
+  justify-content: center;
+  padding-block: 2%;
+  gap: 5%;
+}
+
+/* Slider */
+.slider { 
+  position: relative; 
+  overflow: hidden; 
+  min-height: 23rem;
+}
+.slides { 
+  display: flex; 
+  transition: transform 0.6s ease; 
+  height: 100%; 
+  gap: 0%;
+}
+.slide { 
+  flex: 0 0 100%;
+}
+.slide img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+}
+.controls { 
+  /*position: absolute; */
+  bottom:0%; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  display: flex; 
+  gap: 10%;
+  width: 6%; 
+}
+.slide-arrow { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  cursor: pointer; 
+  user-select: none; 
+  transition: .3s; 
+}
+.slide-arrow img {
+  width: 100%;
+}
+.slide-arrow:hover { 
+  background: rgba(255,255,255,.3); 
+}
+
+.dots {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.dot.active {
+  background: #fff;
+  transform: scale(1.2);
+}
+
+/* Slider ends */
+
+.register {
+  border-top: 1.5px solid black;
+}
+.register .cream-bg h1 {
+  padding-inline: 15%;
+}
+.register .cream-bg, .register .yellow-bg {
+  padding-block: 5%;
+  padding-inline: 5%;
+  opacity: 1;
+  border-bottom: 0;
+  border-left: 0;
+  text-align: left;
+  width: 50%;
+}
+.register .yellow-bg {
+  margin-block-start: 0%;
+}
+
+/* Active campaign form styling */
+
+
+/* Form styling ends */
+
+
+@media only screen and (max-width: 768px) {
+
+  .banner h1 {
+    margin-block: 0.5rem 2rem;
+    font-size: 3.5rem;
+  }
+  .clarity-exc h1, .yellow-bg h1, .va h1, .blue-bg h1, .speaker h1, .tradition h1, .moments h1, .register .blue-bg h1
+ {
+    margin-block: 0.5rem 2rem;
+    font-size: 2.3rem;
+  }
+
+  p {
+    line-height: 1.4;
+  }
+
+  .banner {
+    background-image: url('/images/new/yajna/banner-mob.jpg');
+    aspect-ratio: 291 / 473;
+    padding-block: 20% 5%;
+    background-size: 100% 100%;
+  }
+  .banner .w-50 {
+    bottom: 5%;
+    left: 6%;
+  }
+  .banner p {
+    margin-block-start: 1.2rem;
+    font-size: 1.2rem;
+  }
+  .banner h4, .banner h2, .speaker h2 {
+    font-size: 1rem;
+  }
+  .banner .btn-yellow {
+    padding-inline: 6%;
+    top: 87%;
+    right: 5%;
+  }
+
+  .yellow-bg {
+    padding-block: 14% 17%; 
+  }
+  .maps-arrow {
+    width: 4%;
+    margin-inline-start: -7%;
+  }
+  .yellow-bg .align {
+    width: 100%;
+  }
+  .yellow-bg .bold {
+    font-size: 1.3rem;
+  }
+
+  .clarity-exc {
+    padding-block: 15%;
+    padding-inline: 6%;
+  }
+  .clarity-exc p {
+    width: 100%;
+  }
+  .clarity-exc img, .speaker img, .tradition img {
+    padding-block-end: 2.3rem;
+  }
+
+  .va {
+    background-image: none;
+    background-color: rgba(161, 199, 204, 0.75);
+    border-bottom: 0;
+    border-top: 0;
+  }
+  .va-para {
+    width: 83%;
+    position: relative;
+    margin-block-start: -13%;
+    padding-block: 15%;
+    padding-inline: 6%;
+  }
+  .va img {
+    width: 100%;
+  }
+
+  .blue-bg {
+    padding-inline: 6%;
+    padding-block: 15%;
+    
+  }
+  .blue-bg p {
+    width: 100%;
+  }
+
+  .quote {
+    text-align: center;
+    margin-inline: 0%;
+    padding-inline: 0%;
+  }
+
+  .speaker {
+    background-size: 70% auto;
+    background-position: 35% 5%;
+    padding-block: 15%;
+    padding-inline: 6%;
+  }
+  .speaker h1, .speaker h2 {
+    padding-inline: 0%;
+  }
+  .speaker .w-50 {
+    width: 100%;
+    padding-inline: 0%;
+  }
+  .speaker p {
+    width: 100%;
+    padding-inline: 0%;
+  }
+  .speaker h3 {
+    font-size: 2rem;
+  }
+
+  .tradition {
+    padding-inline: 6%;
+    padding-block: 15%;
+  }
+  .tradition .w-40, .tradition .w-55 {
+    width: 100%;
+  }
+  .tradition p {
+    width: 100%;
+  }
+
+  .moments {
+    padding-block: 12% 15%;
+  }
+  .slider {
+    min-height: 17rem;
+  }
+  .slides { 
+    gap: 2%; 
+  }
+  .slide { 
+    flex: 0 0 100%; 
+  }
+  .controls {
+    width: 20%;
+  }
+
+  .register .cream-bg, .register .yellow-bg {
+    width: 88%;
+    padding-block: 10%;
+    border-top: 0;
+    border-left: 0;
+    padding-inline: 6%;
+    text-align: left;
+  }
+  
+}

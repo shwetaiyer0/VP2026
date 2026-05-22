@@ -154,6 +154,12 @@
   display: block;
   margin-inline: auto;
 }
+.clarity-exc .medium-heading {
+  font-size: 3rem;
+}
+.clarity-exc .italics {
+  font-size: 4rem;
+}
 
 .talk-images img {
   width: 33.3%;
@@ -367,6 +373,12 @@
   }
   .clarity-exc p {
     width: 100%;
+  }
+  .clarity-exc .medium-heading {
+    font-size: 2rem;
+  }
+  .clarity-exc .italics {
+    font-size: 3rem;
   }
 
   .register .green-bg, .register .yellow-bg {

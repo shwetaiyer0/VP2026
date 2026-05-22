@@ -3,17 +3,17 @@
 var slides = document.querySelector('.slides');
 var slide = document.querySelector('.slide');
 var slideCount = document.querySelectorAll('.slide').length;
-var visibleSlides = 3;
-var gap = 1; 
+var visibleSlides = 1;
+var gap = 0; 
 let index = 0;
 
 function updateSlider() {
-  var movePercent = index * (100 / visibleSlides + gap / visibleSlides);
+  var movePercent = index * 100;
   slides.style.transform = `translateX(-${movePercent}%)`;
 }
 
 document.querySelector('.next').onclick = () => {
-  if (index < slideCount - visibleSlides) {
+  if (index < slideCount - 1) {
     index++;
     updateSlider();
   }
@@ -25,12 +25,12 @@ document.querySelector('.prev').onclick = () => {
     updateSlider();
   }
 };
+
 window.addEventListener('resize', () => {
-  visibleSlides = window.innerWidth <= 844 ? 1 : 3;
-  if (index > slideCount - visibleSlides) index = slideCount - visibleSlides;
+  visibleSlides = 1;
+  if (index > slideCount - 1) index = slideCount - 1;
   updateSlider();
 });
-
 
 // YouTube
 var popup = document.getElementById('videoPopup');
