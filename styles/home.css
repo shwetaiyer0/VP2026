@@ -32,7 +32,7 @@
   width: 18%;
   position: absolute;
   right: 23.4%;
-  bottom: 11.3%;
+  bottom: 11.7%;
 }
 .banner .details h2 {
   font-size: 1.1rem;
@@ -251,12 +251,12 @@
     /*width: 70%;*/
     /*padding-block: 6%;*/
     padding-inline: 5% 0%;
-    width: 45%;
-    padding-block: 2%;
+    width: 65%;
+    padding-block: 3%;
     /*right: 19.1%;*/
     /*bottom: 4.4%;*/
-    right: 44.1%;
-    bottom: 4.8%;
+    right: 24.1%;
+    bottom: 4.4%;
   }
   .banner .details a {
     font-size: 1rem;

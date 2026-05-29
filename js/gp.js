@@ -49,28 +49,63 @@ function restartAutoSlide() {
 }
 startAutoSlide();
 
-// YouTube
-var popup = document.getElementById('videoPopup');
-var iframe = document.getElementById('youtubeVideo');
-var closeButton = document.getElementById('closeButton');
-var playButton = document.getElementById('playButton');
+// Speaker slider
+if (window.innerWidth <= 767) {
+  const slider = document.querySelector('.articles-slider');
+  const slides = document.querySelectorAll('.article-slide');
+  const prevBtn = document.querySelector('.article-prev');
+  const nextBtn = document.querySelector('.article-next');
+  let currentIndex = 0;
+  const totalSlides = slides.length;
+  const visibleCards = 2;
+  const maxIndex = totalSlides - visibleCards;
 
-playButton.addEventListener('click', function() {
-    var videoURL = playButton.getAttribute('data-video') + "?autoplay=1";
-    iframe.src = videoURL;
-    popup.style.display = 'flex';
-});
+  function updateArticleSlider() {
 
-closeButton.addEventListener('click', function() {
-    popup.style.display = 'none';
-    iframe.src = ""; // stop video
-});
+    const slideWidth = slides[0].offsetWidth + 14;
+    slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  }
 
-window.addEventListener('click', function(event) {
-    if (event.target === popup) {
-        popup.style.display = 'none';
-        iframe.src = "";
+  nextBtn.addEventListener('click', () => {
+    if (currentIndex < maxIndex) {
+      currentIndex++;
+      updateArticleSlider();
     }
-});
+  });
+
+  prevBtn.addEventListener('click', () => {
+
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateArticleSlider();
+    }
+
+  });
+
+}
+
+// YouTube
+// var popup = document.getElementById('videoPopup');
+// var iframe = document.getElementById('youtubeVideo');
+// var closeButton = document.getElementById('closeButton');
+// var playButton = document.getElementById('playButton');
+
+// playButton.addEventListener('click', function() {
+//     var videoURL = playButton.getAttribute('data-video') + "?autoplay=1";
+//     iframe.src = videoURL;
+//     popup.style.display = 'flex';
+// });
+
+// closeButton.addEventListener('click', function() {
+//     popup.style.display = 'none';
+//     iframe.src = ""; // stop video
+// });
+
+// window.addEventListener('click', function(event) {
+//     if (event.target === popup) {
+//         popup.style.display = 'none';
+//         iframe.src = "";
+//     }
+// });
 
 
