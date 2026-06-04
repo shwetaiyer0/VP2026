@@ -1557,6 +1557,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             tooltip = create_tooltip(elem, "Enter a valid phone number.");
                         }
                     }
+                    if (no_error && elem.name == 'phone') {
+                      if (!value.match(/^(?!.*(\d)\1{6})(\d{10})$/)) {
+                        elem.className = elem.className + ' _has_error';
+                        no_error = false;
+                        tooltip = create_tooltip(elem, "Enter a valid phone number.");
+                      }
+                    }
                     if (no_error && /date_field/.test(elem.className)) {
                         if (!value.match(/^\d\d\d\d-\d\d-\d\d$/)) {
                             elem.className = elem.className + ' _has_error';
