@@ -32,6 +32,7 @@ sup {
   position: absolute;
   top: 50%;
   right: 8%;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
 }
 .banner .btn-yellow {
   background-color: #004C74;
@@ -45,8 +46,15 @@ sup {
 .pink-bg {
   background: #763B45 0% 0% no-repeat padding-box;
   padding-inline: 10%;
-  padding-block: 10% 0;
+  padding-block: 6% 0;
   text-align: center;
+}
+.pink-bg .bold {
+  font-size: 1.6rem;
+  margin-block: 3% 0%;
+}
+.pink-bg .medium-heading {
+  margin-block:   1% 0%;
 }
 .screening {
   width: 60%;
@@ -59,13 +67,16 @@ sup {
 .yellow-bg {
   background: #FCD979 0% 0% no-repeat padding-box;
   border-bottom: 1.5px solid black;
-  padding-inline: 10%;
+  padding-inline: 20%;
   margin-block-start: -18%;
-  padding-block: 22% 5%;
+  padding-block: 16% 5%;
   text-align: center;
 }
 .yellow-bg .bold {
   font-size: 1.5rem;
+}
+.yellow-bg .italics {
+  font-size: 1.2rem;
 }
 .yellow-bg h2 {
   font-size: 1rem;
@@ -79,7 +90,9 @@ sup {
 .clarity {
   background: #FFFFFF 0% 0% no-repeat padding-box;
   padding-block: 10%;
-  padding-inline: 10%;
+  padding-inline: 9%;
+  border-top: 1.5px solid #282828;
+  border-bottom: 1.5px solid #282828;
 }
 .clarity .row {
   gap: 5%;
@@ -87,7 +100,7 @@ sup {
 .clarity p {
 }
 .clarity img {
-	width: 30%;
+	width: 22%;
   padding-block-start: 15%;
 }
 .vr {
@@ -102,13 +115,18 @@ sup {
   padding-block: 10%;
   aspect-ratio: 320 / 173;
   position: relative;
+  border-bottom: 1.5px solid #282828;
 }
 .quote h1 {
   font-size: 2.5rem;
+  line-height: 1.8;
+}
+.quote h2 {
+  letter-spacing: 2px;
 }
 .quote-content {
   position: absolute;
-  top: 45%;
+  top: 37%;
   width: 60%;
   text-align: center;
 }
@@ -176,29 +194,44 @@ sup {
 	padding-block: 10%;
   padding-inline: 10%;
 }
+.speaker p {
+  width: 80%;
+}
 .speaker .row-rev-col {
   align-items: center;
 }
 .speaker .row {
-  padding-block: 10%;
+  padding-block: 10% 0%;
   gap: 5%;
 }
 .speaker img {
   width: 100%;
-  cursor: pointer;
   display: block;
   margin-inline: auto;
 }
 .speaker .logos {
-  width: 80%;
+  width: 70%;
   float: left;
 }
-
+.article-link {
+  text-decoration: none;
+  color: #282828;
+}
+.speaker .link-arrow {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-left: 1px;
+  vertical-align: 0;
+  background: url("../images/new/gp/arrow.png") no-repeat center;
+  background-size: contain;
+}
 .article-nav {
   display: none;
 }
 .articles-wrapper p {
   font-size: 1rem;
+  width: 95%;
 }
 
 /* Youtube video popup */
@@ -332,11 +365,6 @@ sup {
   margin-block-start: 0%;
 }
 
-/* Active campaign form styling */
-
-
-/* Form styling ends */
-
 
 @media only screen and (max-width: 768px) {
 
@@ -392,6 +420,7 @@ sup {
 
   .yellow-bg {
     padding-block: 35% 15%; 
+    padding-inline: 10%;
     margin-block-start: -35%;
   }
   .maps-arrow {
@@ -421,10 +450,14 @@ sup {
 
   .clarity {
     padding-block: 15%;
-    padding-inline: 10%;
+    padding-inline: 8%;
+    border-top: 0;
   }
   .clarity .w-50 {
     padding-block: 5%;
+  }
+  .clarity img {
+    width: 25%;
   }
 
   .vr {
@@ -471,7 +504,7 @@ sup {
   .speaker {
     background-size: 70% auto;
     background-position: 35% 5%;
-    padding-block: 15%;
+    padding-block: 15% 0%;
     padding-inline: 6%;
   }
   .speaker h1, .speaker h2 {
@@ -560,17 +593,19 @@ sup {
   }
   .quote h1 {
     font-size: 2rem;
+    line-height: 1.2;
   }
 
   .tradition {
-    padding-inline: 6%;
+    padding-inline: 0%;
     padding-block: 15%;
   }
   .tradition .w-40, .tradition .w-55 {
     width: 100%;
   }
   .tradition p {
-    width: 100%;
+    width: 90%;
+    padding-inline: 5%;
   }
 
   .moments {
@@ -578,9 +613,10 @@ sup {
   }
   .slider {
     min-height: auto;
+    overflow: hidden;
   }
   .slides { 
-    gap: 2%; 
+    gap: 0%; 
   }
   .slide { 
     flex: 0 0 100%; 

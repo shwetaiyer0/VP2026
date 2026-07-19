@@ -11,7 +11,7 @@
     "youth": false
   },
   {
-    "text": "Governing Business & Relationships",
+    "text": "The Holocaust of Attachment",
     "day": "TUESDAY",
     "time": "6 - 7 pm",
     "area": "SOPAN BAUG",
@@ -68,7 +68,7 @@
   {
     "text": "Governing Business & Relationships",
     "day": "THURSDAY",
-    "time": "6 - 7 pm",
+    "time": "4:30 - 5:30 pm",
     "area": "HADAPSAR",
     "lat": 18.5139992,
     "lng": 73.9429772,
@@ -95,7 +95,7 @@
     "lat": 18.5486854,
     "lng": 73.9543361,
     "location": "B 802, Gera Emerald City North, Near EON IT Park, Kharadi",
-    "contact": "Abhijit - 7722091442",
+    "contact": "Megha - 7720093442",
     "youth": false
   },
   {
@@ -121,9 +121,9 @@
     "youth": false
   },
   {
-    "text": "Select English Poems",
-    "day": "SATURDAY",
-    "time": "4:00 - 5:00 pm",
+    "text": "The Fall of the Human Intellect",
+    "day": "SUNDAY",
+    "time": "9:30 - 10:30 am",
     "area": "HADAPSAR",
     "lat": 18.5139992,
     "lng": 73.9429772,
@@ -160,7 +160,7 @@
     "area": "CAMP",
     "lat": 18.5226501,
     "lng": 73.8789808,
-    "location": "Poona Club, Library Hall, First Floor, 6 Bund Garden Road, Camp",
+    "location": "Poona Club Library Hall, 6, Bund Garden Road, Camp",
     "contact": "Devyani - 9404001863",
     "youth": false
   },
@@ -178,7 +178,7 @@
   {
     "text": "The Fall of the Human Intellect",
     "day": "SUNDAY",
-    "time": "10:30 - 11:30 am",
+    "time": "11:30 am - 12:30 pm",
     "area": "BHUGAON",
     "lat": 18.4976819,
     "lng": 73.7457802,
@@ -198,14 +198,36 @@
     "youth": false
   },
   {
+    "text": "Bhaja Govindam",
+    "day": "SATURDAY",
+    "time": "11 am - 12 noon",
+    "area": "KOREGAON PARK",
+    "lat": 18.5492468,
+    "lng": 73.9031786,
+    "location": "Antarvanam, Bungalow C4, Riverside Sultanate Society, North Main Road, Opp. Lane 5, Koregaon Park",
+    "contact": "Sarisha - 9371086860",
+    "youth": false
+  },
+  {
     "text": "Bhagavad Gita",
     "day": "SUNDAY",
     "time": "11 am - 12 noon",
-    "area": "KALYANI NAGAR",
+    "area": "KOREGAON PARK",
     "lat": 18.5492468,
     "lng": 73.9031786,
-    "location": "Artsphere, Fourth Floor, North Court Building, North Avenue Road 12, Kalyani Nagar",
+    "location": "Antarvanam, Bungalow C4, Riverside Sultanate Society, North Main Road, Opp. Lane 5, Koregaon Park",
     "contact": "Lakshmi - 9890097968",
+    "youth": false
+  },
+  {
+    "text": "The Holocaust of Attachment",
+    "day": "THURSDAY",
+    "time": "11 am - 12 noon",
+    "area": "KOREGAON PARK",
+    "lat": 18.5492468,
+    "lng": 73.9031786,
+    "location": "Antarvanam, Bungalow C4, Riverside Sultanate Society, North Main Road, Opp. Lane 5, Koregaon Park",
+    "contact": "Sarisha - 9371086860",
     "youth": false
   },
   {
@@ -227,33 +249,33 @@
     "lat": 18.4790911,
     "lng": 73.9082017,
     "location": "Club House, Cloud Nine Society, NIBM P.O. Road, Near Nine Hills, Kondhwa",
-    "contact": "Aruna - 9371023684",
+    "contact": "Smriti - 8411045167",
     "youth": false
   },
   {
     "text": "Bhagavad Gita",
     "day": "SUNDAY",
-    "time": "12 noon - 1 pm",
+    "time": "10:30 - 11:30 am",
     "area": "BHUGAON",
     "lat": 18.4956582,
     "lng": 73.7527847,
     "location": "The Poona Western Club, Bhugaon",
-    "contact": "Anjali - 9423174568",
+    "contact": "Swati - 7719030909",
     "youth": false
   },
   {
     "text": "The Holocaust of Attachment",
     "day": "SUNDAY",
     "time": "3 - 4 pm",
-    "area": "KALYANI NAGAR",
+    "area": "KOREGAON PARK",
     "lat": 18.5244549,
     "lng": 73.8850608,
-    "location": "E-403 Lunkad Skylounge, Kalyani Nagar",
+    "location": "Antarvanam, Bungalow C4, Riverside Sultanate Society, North Main Road, Opp. Lane 5, Koregaon Park",
     "contact": "Namrata - 9967630520",
     "youth": true
   },
   {
-    "text": "Select English Poems",
+    "text": "The Fall of the Human Intellect",
     "day": "SUNDAY",
     "time": "9 - 10 am",
     "area": "CHINCHWAD",

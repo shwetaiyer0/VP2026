@@ -1,0 +1,391 @@
+@charset "UTF-8";
+
+
+/* Watch page styling */
+.watch h1 {
+  font-size: 4.5rem;
+  line-height: 1.1;
+}
+.watch h2, .timer h2  {
+  font-family: "neue-med";
+}
+.timer h2 {
+  /*padding-inline: 53% 30%;*/
+  color: #D5CBB7;
+  font-size: 1.3rem;
+}
+.watch {
+  position: relative;
+  background-image: url('../images/gp26/watch.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-block: 2% 5%;
+  overflow: hidden;
+}
+.watch p {
+  font-size: 1.2rem;
+}
+.watch .row {
+  width: 80%;
+  padding-inline: 10%;
+  padding-block: 0% 3%;
+  align-items: center;
+}
+.watch .logo {
+}
+.watch-text .btn {
+  text-decoration: none;
+  background: #9C6742 0% 0% no-repeat padding-box;
+  color: #FAF5EA;
+  font-weight: bold;
+  margin-block: 1%;
+}
+.top-motif {
+  position: absolute;
+  top: -30%;
+  left: 0%;
+  width: 35%;
+  opacity: 0.4;
+}
+.timer {
+  padding-block: 3%;
+  text-align: center;
+}
+
+.watch iframe {
+  width: 90%;
+  height: 100%;
+  padding: 0;
+}
+.countdown-container {
+  display: flex;
+  justify-content: left;
+  gap: 0%;
+  width: 35%;
+  /*padding-inline: 37% 20%;*/
+  padding-block: 1%;
+  margin-inline: auto;
+}
+.countdown {
+  text-align: center;
+  color: #fff;
+  width: 25%;
+}
+.classes {
+  background-color: #EDE8D0;
+  padding-block: 5%;
+}
+.time {
+  font-family: "ivy";
+  display: block;
+  font-size: 2.5rem;
+}
+.label {
+  font-family: 'helv';
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #D5CBB7;
+}
+.watch-img {
+  width: 100%;
+  cursor: pointer;
+  padding-block-start: 3%;
+  position: relative;
+  z-index: 5;
+}
+.watch-text {
+  background: #FAF5EA 0% 0% no-repeat padding-box;
+  padding-block: 5%;
+  padding-inline: 10%;
+  position: relative;
+  z-index: 5;
+}
+.watch-text p {
+  width: 90%;
+  display: block;
+  margin-inline: auto;
+  padding-block: 1% 2%;
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+
+#youtubeVideo-va {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+.video-container {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh;
+}
+.bottom-motif {
+  position: absolute;
+  bottom: -30%;
+  right: -15%;
+  width: 35%;
+  opacity: 0.6;
+}
+
+
+/*Time converter CSS */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 6px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.label-text {
+  font-weight: bold;
+  font-size: 1.1em;
+  white-space: nowrap;
+}
+
+select {
+  padding: 8px 12px;
+  font-size: 1em;
+  min-width: 180px;
+  max-width: 250px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  pointer-events: auto;
+}
+.popup-content {
+  position: relative;
+  margin: 10% auto;
+  padding: 0;
+  width: 80%;
+  max-width: 800px;
+  background: #000;
+}
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 100000;
+}
+.popup-content iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+  pointer-events: auto;
+}
+.playButton {
+  position: absolute;
+  width: 6%;
+  left: 67%;
+  top: 44%;
+  cursor: pointer;
+}
+
+.footer {
+  background: #2B4237 0% 0% no-repeat padding-box;
+  color: #fff;
+  padding-block: 3%;
+  padding-inline: 5%;
+  text-align: center;
+}
+.footer p {
+  padding: 0%;
+  margin-block: 1%;
+  color: #fff;
+}
+.footer a {
+  color: #BDD2CD;
+  text-decoration: underline;
+}
+.footer .footer-logo {
+  max-width: 12% ;
+  padding-block-end: 5%;
+}
+.social {
+  justify-content: center;
+}
+.social a {
+  display:inline-block;
+  width:55px;
+  padding-inline: 0.5%;
+}
+.footer a img {
+  width: 80%;
+  padding: 0%;
+  background: #fff;
+  border-radius: 80%;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+  align-items: center; 
+}
+
+@media only screen and (max-width: 768px) {
+ .desktop {
+    display: none;
+  }
+  .mobile {   
+    display: block;
+  }
+  .row {
+    flex-direction: column; 
+  }
+  .row-articles {
+    display: flex;
+    flex-direction: row !important; 
+    width: 100%;
+  }
+  .rev {
+    flex-direction: column-reverse !important;
+  }
+  .w-5, .w-20, .w-25, .w-30, .w-40, .w-50, .w-60, .w-70, .w-75, .w-80 {
+    width: 100%;
+  }
+  .trailer {
+    max-width: 100%;
+    height: auto;
+  }
+  .content-wrap .row {
+    flex-direction: row;
+    width: 90%;
+    margin-inline: 2.5%;
+    padding-inline: 2.5%;
+    padding-block: 2%;
+    top: 1%;
+  }
+  h1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+  }
+  h2 {
+    font-size: 0.8rem !important;
+    letter-spacing: 0px;
+  }
+  h3 {
+    font-size: 1.6rem;
+    margin-block: 0% 3%;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+
+  .playButton {
+    width: 18%;
+    left: 43%;
+    top: 38%;
+  }
+
+  .top-motif {
+    top: -10%;
+    left: -25%;
+    width: 55%;
+    opacity: 0.8
+  }
+  .bottom-motif {
+    bottom: -10%;
+    right: -25%;
+    width: 50%;
+  }
+
+  .timer {
+    padding-block: 15% 5%;
+  }
+  .timer h2 {
+    padding-inline: unset;
+    text-align: center;
+  }
+  .countdown-container {
+    gap: 2%;
+    width: 70%;
+    margin-inline: auto;
+  }
+
+  .watch h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .watch p {
+    padding-block: 5% 0%;
+    text-align: center;
+  }
+  .watch-text {
+    padding-block: 10%;
+    padding-inline: 8%;
+  }
+  .watch-text p {
+    width: 100%;
+    font-size: 1.1rem;
+    padding-block: 6%;
+  }
+  .watch h2 {
+    text-align: center;
+    font-size: 1.1rem !important;
+  }
+  .timer h2 {
+    font-size: 0.8rem !important;
+  }
+  .time {
+    font-size: 2rem;
+  }
+
+  .watch iframe {
+    height: auto;
+  }
+  .watch-img {
+    width: 132%;
+    margin-inline-start: -15%;
+  }
+  
+
+  .video-container {
+    height: auto;
+    padding-block: 5%;
+  }
+
+
+  .footer {
+    padding-block: 10% 5%;
+  }
+  .footer h2 {
+    font-size: 2rem !important;
+  }
+  .footer h3 {
+    font-size: 1.8rem;
+    margin: 0%;
+  }
+  .footer .footer-logo {
+    max-width: 25% ;
+  }
+  .footer-text {
+    top: 74%;
+  }
+  .footer .row {
+    flex-direction: row;
+    padding: 3% 0%;
+  }
+  .footer p {
+    font-size: 12px;
+    padding-block: 1% 0%;
+    padding-inline: 0% 4%;
+  }
+} 

@@ -1,7 +1,8 @@
 
 // Slider
 const slides = document.querySelector('.slides');
-const slideCount = document.querySelectorAll('.slide').length;
+const slideElements = document.querySelectorAll('.slide');
+const slideCount = slideElements.length;
 const dotsContainer = document.querySelector('.dots');
 
 let index = 0;
@@ -23,10 +24,16 @@ for (let i = 0; i < slideCount; i++) {
 
   dotsContainer.appendChild(dot);
 }
+
 const dots = document.querySelectorAll('.dot');
 
 function updateSlider() {
-  slides.style.transform = `translateX(-${index * 100}%)`;
+  if (window.innerWidth <= 767) {
+    const slideWidth = slideElements[0].offsetWidth;
+    slides.style.transform = `translateX(-${slideWidth * index}px)`;
+  } else {
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  }
 
   dots.forEach(dot => dot.classList.remove('active'));
   dots[index].classList.add('active');
@@ -41,13 +48,18 @@ function startAutoSlide() {
     }
 
     updateSlider();
-  }, 3000); 
+  }, 3000);
 }
+
 function restartAutoSlide() {
   clearInterval(autoSlide);
   startAutoSlide();
 }
+
+window.addEventListener('resize', updateSlider);
+
 startAutoSlide();
+updateSlider();
 
 // Speaker slider
 if (window.innerWidth <= 767) {
