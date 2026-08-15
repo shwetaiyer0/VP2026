@@ -46,17 +46,6 @@
   {
     "text": "The Holocaust of Attachment",
     "day": "THURSDAY",
-    "time": "6:30-7:30 pm",
-    "area": "BHUGAON",
-    "lat": 18.4956582,
-    "lng": 73.7527847,
-    "location": "The Poona Western Club, Bhugaon",
-    "contact": "Usha - 9284954326",
-    "youth": false
-  },
-  {
-    "text": "The Holocaust of Attachment",
-    "day": "THURSDAY",
     "time": "6:30 - 7:30 pm",
     "area": "AUNDH",
     "lat": 18.5589705,
@@ -66,7 +55,7 @@
     "youth": false
   },
   {
-    "text": "Governing Business & Relationships",
+    "text": "The Holocaust of Attachment",
     "day": "THURSDAY",
     "time": "4:30 - 5:30 pm",
     "area": "HADAPSAR",
@@ -253,17 +242,6 @@
     "youth": false
   },
   {
-    "text": "Bhagavad Gita",
-    "day": "SUNDAY",
-    "time": "10:30 - 11:30 am",
-    "area": "BHUGAON",
-    "lat": 18.4956582,
-    "lng": 73.7527847,
-    "location": "The Poona Western Club, Bhugaon",
-    "contact": "Swati - 7719030909",
-    "youth": false
-  },
-  {
     "text": "The Holocaust of Attachment",
     "day": "SUNDAY",
     "time": "3 - 4 pm",
@@ -275,7 +253,7 @@
     "youth": true
   },
   {
-    "text": "The Fall of the Human Intellect",
+    "text": "Select English Poems",
     "day": "SUNDAY",
     "time": "9 - 10 am",
     "area": "CHINCHWAD",

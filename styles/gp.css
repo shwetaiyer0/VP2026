@@ -240,6 +240,13 @@ select {
   align-items: center; 
 }
 
+.ty-img {
+  width: 50%;
+  display: block;
+  margin-inline: auto;
+  padding-block: 5%;
+}
+
 @media only screen and (max-width: 768px) {
  .desktop {
     display: none;
