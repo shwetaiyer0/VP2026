@@ -132,12 +132,14 @@
 .why-attend img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .why-attend .yellow-bg .row-row {
   padding-block: 5%;
 }
 .why-attend .yellow-bg img {
-  width: 50%;
+  width: 53%;
+  aspect-ratio: 1 / 1;
   display: block;
   margin-inline: auto;
 }

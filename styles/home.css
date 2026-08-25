@@ -246,11 +246,11 @@
     margin-inline-start: 0%;
   }
   .banner .details {
-    width: 70%;
+    width: 84%;
     padding-block: 6%;
     padding-inline: 5% 0%;
-    right: 19.1%;
-    bottom: 4.4%;
+    right: 5.1%;
+    bottom: 3.4%;
   }
   .banner .details a {
     font-size: 1rem;
@@ -260,7 +260,7 @@
     margin-block: 5%;
   }
   .banner .details h2 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-block: 0% 5%;
   }
   .details img {
