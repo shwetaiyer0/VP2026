@@ -1,12 +1,16 @@
-# Force CloudCannon to treat the repo as plain HTML
 ssg: static
 
-# Set the upload directory for images
 paths:
   uploads: "images"
   static: ""
 
-# Define your static HTML pages collection
+# Automatically make standard HTML tags editable across all pages
+_editables:
+  content:
+    text: true
+    hyperlink: true
+    image: true
+
 collections_config:
   pages:
     path: ""
