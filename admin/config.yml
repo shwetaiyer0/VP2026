@@ -1,17 +1,46 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: shwetaiyer0/VP2026
   branch: main
 
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
+media_folder: "images"
+public_folder: "/images"
 
 collections:
   - name: "pages"
-    label: "Pages"
+    label: "Website Pages"
     files:
       - file: "index.html"
-        label: "Homepage"
-        name: "home"
+        label: "Home Page (index.html)"
+        name: "home_index"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Main Text", name: "main_text", widget: "text" }
+          - { label: "Page Body Content", name: "body", widget: "code", default_language: "html" }
+
+      - file: "home.html"
+        label: "Home Page (home.html)"
+        name: "home_page"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Body Content", name: "body", widget: "code", default_language: "html" }
+
+      - file: "about.html"
+        label: "About Us"
+        name: "about"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Body Content", name: "body", widget: "code", default_language: "html" }
+
+      - file: "weekly.html"
+        label: "Weekly Classes"
+        name: "weekly"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Body Content", name: "body", widget: "code", default_language: "html" }
+
+      - file: "happiness.html"
+        label: "Happiness Program"
+        name: "happiness"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Body Content", name: "body", widget: "code", default_language: "html" }
