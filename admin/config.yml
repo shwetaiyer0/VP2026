@@ -2,7 +2,7 @@ backend:
   name: github
   repo: shwetaiyer0/VP2026
   branch: main
-  base_url: https://api.sveltia.dev
+  # base_url: https://api.sveltia.dev
 
 media_folder: "images"
 public_folder: "/images"
