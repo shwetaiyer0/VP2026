@@ -1,0 +1,19 @@
+media:
+  input: images
+  output: /images
+
+content:
+  - name: pages
+    label: Pages
+    type: collection
+    files:
+      - name: index
+        label: Home Page
+        path: index.html
+        fields:
+          - name: title
+            label: Page Title
+            type: string
+          - name: body
+            label: Page Content
+            type: rich-text
