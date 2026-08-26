@@ -1,17 +1,18 @@
+# Force CloudCannon to treat the repo as plain HTML
+ssg: static
+
+# Set the upload directory for images
 paths:
-  static: ''
-  uploads: images
-timezone: Asia/Calcutta
-markdown:
-  engine: commonmark
-  options: {}
+  uploads: "images"
+  static: ""
+
+# Define your static HTML pages collection
 collections_config:
   pages:
-    path: ''
-    icon: wysiwyg
-  admin:
-    path: admin
-    icon: ad
-  js:
-    path: js
-    icon: 1k
+    path: ""
+    output: true
+    filter: "strict"
+    glob: "*.html"
+    url: "/[slug].html"
+    icon: "description"
+    name: "Pages"
