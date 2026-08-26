@@ -2,8 +2,8 @@ backend:
   name: github
   repo: shwetaiyer0/VP2026
   branch: main
-  # base_url: https://api.sveltia.dev
 
+# Default global media folder fallback
 media_folder: "images"
 public_folder: "/images"
 
@@ -11,37 +11,278 @@ collections:
   - name: "pages"
     label: "Website Pages"
     files:
-      - file: "index.html"
-        label: "Home Page (index.html)"
-        name: "home_index"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Page Body Content", name: "body", widget: "code", default_language: "html" }
-
+      # =========================================================
+      # 1. HOME PAGE (home.html)
+      # =========================================================
       - file: "home.html"
         label: "Home Page (home.html)"
         name: "home_page"
+        media_folder: "images/new/home"
+        public_folder: "images/new/home"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Page Body Content", name: "body", widget: "code", default_language: "html" }
+          - { label: "Page Meta Title", name: "title", widget: "string", default: "Home | Vedanta Pune" }
+          
+          # Hero / Event Banner Section
+          - label: "Hero & Event Banner Section"
+            name: "hero_section"
+            widget: "object"
+            fields:
+              - { label: "Main Hero Heading (h1)", name: "hero_h1", widget: "string", default: "Where the timeless wisdom of Vedanta meets modern living" }
+              - { label: "Hero Subtitle (p)", name: "hero_p", widget: "string", default: "Vedanta Pune offers engaging sessions that help you explore life from the inside out." }
+              - { label: "Banner Image", name: "banner_image", widget: "image", media_folder: "images/new/home", public_folder: "images/new/home/banner.jpg" }
+              - { label: "Event Date & Time", name: "event_date", widget: "string", default: "25 - 28 Nov | 6:15 - 8:00 pm" }
+              - { label: "Event Title", name: "event_title", widget: "string", default: "A Call to Happiness" }
+              - { label: "Event Link URL", name: "event_link", widget: "string", default: "https://vedantapune.org/happiness?utm_source=pune-web" }
 
+          # What is Vedanta Section
+          - label: "What is Vedanta Section"
+            name: "what_is_section"
+            widget: "object"
+            fields:
+              - { label: "Section Heading", name: "heading", widget: "string", default: "What is Vedanta?" }
+              - { label: "Section Content", name: "text", widget: "markdown" }
+
+          # Experience / Feature Blocks (4 Cards)
+          - label: "Experience Cards (4 Boxes)"
+            name: "experience_cards"
+            widget: "list"
+            fields:
+              - { label: "Card Title (h3)", name: "title", widget: "string" }
+              - { label: "Card Description (p)", name: "description", widget: "string" }
+              - { label: "Card Image", name: "image", widget: "image", media_folder: "images/new/home", public_folder: "images/new/home" }
+
+          # Vedanta Academy Section
+          - label: "Vedanta Academy Section"
+            name: "va_section"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string", default: "Vedanta Academy" }
+              - { label: "Description", name: "description", widget: "markdown" }
+              - { label: "Mobile Image", name: "mobile_image", widget: "image", media_folder: "images/new/home", public_folder: "images/new/home" }
+
+      # =========================================================
+      # 2. HOME INDEX PAGE (index.html)
+      # =========================================================
+      - file: "index.html"
+        label: "Home Index (index.html)"
+        name: "home_index"
+        media_folder: "images/new/home"
+        public_folder: "images/new/home"
+        fields:
+          - { label: "Page Meta Title", name: "title", widget: "string", default: "Home | Vedanta Pune" }
+          - { label: "Full Page Body Content", name: "body", widget: "markdown" }
+
+      # =========================================================
+      # 3. ABOUT US PAGE (about.html)
+      # =========================================================
       - file: "about.html"
-        label: "About Us"
-        name: "about"
+        label: "About Us Page (about.html)"
+        name: "about_page"
+        media_folder: "images/new/about"
+        public_folder: "images/new/about"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Page Body Content", name: "body", widget: "code", default_language: "html" }
+          - { label: "Page Meta Title", name: "title", widget: "string", default: "About | Vedanta Pune" }
 
+          # Banner & Vedanta Academy Section
+          - label: "Vedanta Academy Banner Section"
+            name: "va_banner_section"
+            widget: "object"
+            fields:
+              - { label: "Main Banner Title (h1)", name: "banner_h1", widget: "string", default: "A Modern Resource of Ancient Wisdom" }
+              - { label: "Academy Description Paragraph", name: "academy_description", widget: "markdown" }
+              - { label: "Youth Retreat Button Text", name: "youth_btn_label", widget: "string", default: "Upcoming youth retreats" }
+              - { label: "Youth Retreat Button URL", name: "youth_btn_url", widget: "string", default: "https://event.vedanta.info/youthretreatdec" }
+              - { label: "Adult Retreat Button Text", name: "adult_btn_label", widget: "string", default: "Upcoming adult retreats" }
+              - { label: "Adult Retreat Button URL", name: "adult_btn_url", widget: "string", default: "https://event.vedanta.info/academyvisitjan" }
+
+          # Swami A. Parthasarathy Section
+          - label: "Swami A. Parthasarathy Section"
+            name: "swamiji_section"
+            widget: "object"
+            fields:
+              - { label: "Section Heading", name: "heading", widget: "string", default: "Swami A. Parthasarathy" }
+              - { label: "Top Intro Paragraph", name: "intro_text", widget: "markdown" }
+              - { label: "Swamiji Main Image", name: "swamiji_image", widget: "image", media_folder: "images/new/about", public_folder: "images/new/about/swa.jpg" }
+              - { label: "Detailed Biography Content", name: "bio_text", widget: "markdown" }
+              
+              # Organization Logos Slider
+              - label: "Institution Logos Slider"
+                name: "logos_slider"
+                widget: "list"
+                fields:
+                  - { label: "Logo Image", name: "logo", widget: "image", media_folder: "images/new/about/logos", public_folder: "images/new/about/logos" }
+                  - { label: "Alt Text", name: "alt", widget: "string", required: false }
+
+          # Talk / Event Photo Gallery Grid
+          - label: "Swamiji Photo Gallery Grid"
+            name: "talk_gallery"
+            widget: "list"
+            fields:
+              - { label: "Gallery Image", name: "image", widget: "image", media_folder: "images/new/about", public_folder: "images/new/about" }
+              - { label: "Caption / Label", name: "caption", widget: "string", required: false }
+
+          # Sunandaji Section
+          - label: "Sunandaji Section"
+            name: "sunandaji_section"
+            widget: "object"
+            fields:
+              - { label: "Section Heading", name: "heading", widget: "string", default: "Sunandaji" }
+              - { label: "Sunandaji Main Image", name: "image", widget: "image", media_folder: "images/new/about", public_folder: "images/new/about/slrji.jpg" }
+              - { label: "Sunandaji Bio & Info Content", name: "content", widget: "markdown" }
+              - { label: "Secondary / Video Thumbnail Image", name: "video_thumb", widget: "image", media_folder: "images/new/about", public_folder: "images/new/about/slrji-vid.jpg" }
+
+          # FAQs Section
+          - label: "FAQ Accordion Items"
+            name: "faqs"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Question (Header)", name: "question", widget: "string" }
+              - { label: "Answer (Content)", name: "answer", widget: "markdown" }
+
+      # =========================================================
+      # 4. WEEKLY SESSIONS PAGE (weekly.html)
+      # =========================================================
       - file: "weekly.html"
-        label: "Weekly Classes"
-        name: "weekly"
+        label: "Weekly Sessions Page (weekly.html)"
+        name: "weekly_page"
+        media_folder: "images/new/classes"
+        public_folder: "images/new/classes"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Page Body Content", name: "body", widget: "code", default_language: "html" }
+          - { label: "Page Meta Title", name: "title", widget: "string", default: "Weekly Sessions" }
 
+          # Banner Section
+          - label: "Hero Banner Section"
+            name: "weekly_banner"
+            widget: "object"
+            fields:
+              - { label: "Tag Button Text", name: "tag_button_text", widget: "string", default: "WEEKLY CLASSES ON VEDANTA" }
+              - { label: "Main Heading (h1)", name: "banner_heading", widget: "string", default: "Your Weekly Pause for Purpose" }
+
+          # What is a Study Class Section
+          - label: "What is a Study Class Section"
+            name: "study_class_section"
+            widget: "object"
+            fields:
+              - { label: "Section Heading", name: "heading", widget: "string", default: "What is a study class?" }
+              - { label: "Description Paragraph", name: "description", widget: "markdown" }
+              - { label: "Video Cover Image / Trigger", name: "cover_image", widget: "image", media_folder: "images/new/classes", public_folder: "images/new/classes/what.jpg" }
+
+          # Class Photo Gallery
+          - label: "Class Photo Gallery"
+            name: "class_gallery"
+            widget: "list"
+            fields:
+              - { label: "Gallery Image", name: "image", widget: "image", media_folder: "images/new/classes", public_folder: "images/new/classes" }
+              - { label: "Alt / Caption", name: "caption", widget: "string", required: false }
+
+          # About Our Teachers Section
+          - label: "About Our Teachers Section"
+            name: "teachers_section"
+            widget: "object"
+            fields:
+              - { label: "Section Heading", name: "heading", widget: "string", default: "About our Teachers" }
+              - { label: "Teachers Bio / Text", name: "description", widget: "markdown" }
+              - { label: "Teachers Image", name: "image", widget: "image", media_folder: "images/new/classes", public_folder: "images/new/classes/speakers.jpg" }
+
+          # Vedanta for Youth Section & Cards Grid
+          - label: "Vedanta for Youth Section"
+            name: "youth_section"
+            widget: "object"
+            fields:
+              - { label: "Section Heading", name: "heading", widget: "string", default: "Vedanta for Youth" }
+              - { label: "Introductory Description", name: "description", widget: "markdown" }
+              - label: "Youth Class Cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "Card Image", name: "image", widget: "image", media_folder: "images/new/classes", public_folder: "images/new/classes" }
+                  - { label: "Class Topic / Title", name: "title", widget: "string" }
+                  - { label: "Day & Time", name: "timing", widget: "string" }
+                  - { label: "Location / Address", name: "location", widget: "string" }
+                  - { label: "Contact Info", name: "contact", widget: "string" }
+
+          # Frequently Asked Questions Section
+          - label: "FAQ Accordion Items"
+            name: "faqs"
+            widget: "list"
+            fields:
+              - { label: "Question (Header)", name: "question", widget: "string" }
+              - { label: "Answer (Content)", name: "answer", widget: "markdown" }
+
+      # =========================================================
+      # 5. HAPPINESS PROGRAM PAGE (happiness.html)
+      # =========================================================
       - file: "happiness.html"
-        label: "Happiness Program"
-        name: "happiness"
+        label: "Pune Yajna - A Call to Happiness"
+        name: "happiness_page"
+        media_folder: "images/new/yajna26"
+        public_folder: "images/new/yajna26"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Page Body Content", name: "body", widget: "code", default_language: "html" }
+          - { label: "Page Meta Title", name: "title", widget: "string", default: "Happiness Program | Vedanta Pune" }
+          - { label: "Event Banner Image", name: "event_image", widget: "image", media_folder: "images/new/happiness", public_folder: "images/new/happiness" }
+          - { label: "Event Details & Body Content (h1, h2, p, links)", name: "body", widget: "markdown" }
+
+      # =========================================================
+      # 6. SATSANGA PAGE (satsanga.html)
+      # =========================================================
+      - file: "satsanga.html"
+        label: "Satsanga Page (satsanga.html)"
+        name: "satsanga_page"
+        media_folder: "images/new"
+        public_folder: "images/new"
+        fields:
+          - { label: "Page Meta Title", name: "title", widget: "string", default: "Vedanta Satsanga" }
+          - { label: "Meta Description", name: "meta_description", widget: "string", default: "Vedanta Satsanga" }
+
+          # Banner Section
+          - label: "Hero Banner Section"
+            name: "banner_section"
+            widget: "object"
+            fields:
+              - { label: "Banner Image", name: "image", widget: "image", media_folder: "images/new", public_folder: "images/new/satsang.jpg" }
+              - { label: "Event Title (h1)", name: "title", widget: "string", default: "Vedanta Satsanga" }
+              - { label: "Date & Time (h4)", name: "date_time", widget: "string", default: "SUNDAY, 25 OCTOBER | 9:30 AM TO 11:30 AM" }
+              - { label: "Venue Location (p)", name: "location", widget: "string", default: "Pingale Sanai Hall, Koregaon Park" }
+              - { label: "Google Maps URL", name: "maps_url", widget: "string", default: "https://maps.app.goo.gl/nDUJwKuhTe8Y1sDS6" }
+
+          # About the Event Section
+          - label: "About the Event Section"
+            name: "about_section"
+            widget: "object"
+            fields:
+              - { label: "Section Heading", name: "heading", widget: "string", default: "About the Event" }
+              - { label: "Description Content", name: "description", widget: "markdown" }
+
+          # Program Schedule Section
+          - label: "Program Schedule Section"
+            name: "program_section"
+            widget: "object"
+            fields:
+              - { label: "Section Heading", name: "heading", widget: "string", default: "Program:" }
+              - label: "Schedule Items"
+                name: "schedule"
+                widget: "list"
+                fields:
+                  - { label: "Time", name: "time", widget: "string" }
+                  - { label: "Description / Activity", name: "details", widget: "string" }
+
+      # =========================================================
+      # 7. THANK YOU PAGE (thankyou.html)
+      # =========================================================
+      - file: "thankyou.html"
+        label: "Thank You Page (thankyou.html)"
+        name: "thankyou_page"
+        media_folder: "images"
+        public_folder: "images"
+        fields:
+          - { label: "Page Meta Title", name: "title", widget: "string", default: "Thank you" }
+          - { label: "Meta Description", name: "meta_description", widget: "string", default: "Thank you | Vedanta Pune" }
+
+          # Thank You Message Section
+          - label: "Thank You Message Section"
+            name: "thankyou_section"
+            widget: "object"
+            fields:
+              - { label: "Heading (h1)", name: "heading", widget: "string", default: "Thank you" }
+              - { label: "Message Content", name: "message", widget: "markdown", default: "To avoid any correspondence filtering into spam, we recommend you add [info@vedantapune.org](mailto:info@vedantapune.org) to your Contacts." }
