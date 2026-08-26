@@ -2,7 +2,7 @@ backend:
   name: github
   repo: shwetaiyer0/VP2026
   branch: main
-  site_domain: https://vp-2026.netlify.app/
+  site_domain: vp-2026.netlify.app/
   base_url: https://api.netlify.com
 
 media_folder: "images"
