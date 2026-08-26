@@ -2,8 +2,7 @@ backend:
   name: github
   repo: shwetaiyer0/VP2026
   branch: main
-  site_domain: vp-2026.netlify.app/
-  base_url: https://api.netlify.com
+  base_url: https://api.sveltia.dev
 
 media_folder: "images"
 public_folder: "/images"
