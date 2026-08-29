@@ -16,5 +16,5 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_EVENTS_8D388 }}'
           channelId: live
-          projectId: vp2026
+          projectId: events-8d388
           scriptGetter: ''
