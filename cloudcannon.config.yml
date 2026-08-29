@@ -4,12 +4,11 @@ paths:
   uploads: "images"
   static: ""
 
-# Automatically make standard HTML tags editable across all pages
-_editables:
-  content:
-    text: true
-    hyperlink: true
-    image: true
+# Enable commit message prompt when saving
+commit_templates:
+  - template_string: "{message}"
+    label: "Describe your changes"
+
 
 collections_config:
   pages:
