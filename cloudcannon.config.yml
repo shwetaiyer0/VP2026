@@ -9,7 +9,6 @@ commit_templates:
   - template_string: "{message}"
     label: "Describe your changes"
 
-
 collections_config:
   pages:
     path: ""
@@ -19,3 +18,52 @@ collections_config:
     url: "/[slug].html"
     icon: "description"
     name: "Pages"
+  classes:
+    name: "Weekly Classes"
+    path: "js/classData.json"
+    icon: "event"
+    output: false
+
+# Configure input fields for classData.json
+_inputs:
+  text:
+    type: text
+    label: "Class Topic / Text"
+  day:
+    type: select
+    label: "Day of the Week"
+    options:
+      values:
+        - "MONDAY"
+        - "TUESDAY"
+        - "WEDNESDAY"
+        - "THURSDAY"
+        - "FRIDAY"
+        - "SATURDAY"
+        - "SUNDAY"
+  time:
+    type: text
+    label: "Time Duration"
+    comment: "e.g., 8:15 - 9:30 am"
+  area:
+    type: text
+    label: "Area / Neighborhood"
+  lat:
+    type: number
+    label: "Latitude"
+    step: 0.0000001
+  lng:
+    type: number
+    label: "Longitude"
+    step: 0.0000001
+  location:
+    type: textarea
+    label: "Full Address / Location Details"
+  contact:
+    type: text
+    label: "Contact Person & Phone"
+  youth:
+    type: boolean
+    label: "Is Youth Class?"
+
+    
