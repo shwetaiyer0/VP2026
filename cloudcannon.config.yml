@@ -28,7 +28,8 @@ collections_config:
 _inputs:
   text:
     type: text
-    label: "Class Topic / Text"
+    label: "Name of the Text"
+    comment: "e.g., The Fall of the Human Intellect"
   day:
     type: select
     label: "Day of the Week"
@@ -58,12 +59,14 @@ _inputs:
     step: 0.0000001
   location:
     type: textarea
-    label: "Full Address / Location Details"
+    label: "Full Address"
   contact:
     type: text
-    label: "Contact Person & Phone"
+    label: "Contact person name & phone"
+    comment: "e.g., Sanyukta - 9527484959"
   youth:
     type: boolean
     label: "Is Youth Class?"
+    comment: "e.g., true or false"
 
     

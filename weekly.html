@@ -126,7 +126,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="pink-bg">
           <h1 class="medium-heading editable">Find a Vedanta<br>Class near you</h1>
-          <div class="row-row">
+          <!-- <div class="row-row">
             <h2 class="editable">FIND BY</h2>
             <div class="custom-select">
               <select id="areaDropdown" onchange="filterClasses()">
@@ -151,7 +151,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <option value="Viman Nagar">VIMAN NAGAR</option>
               </select>
             </div>
-            
           </div>
           <div class="row-row">
             <div class="w-14"></div>
@@ -169,7 +168,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </select>
             </div>
           </div>
+          <p id="search-message">See below for search results.</p> -->
+          <!-- Test dynamic values from json -->
+
+          <div class="row-row">
+            <h2 class="editable">FIND BY</h2>
+            <div class="custom-select">
+              <select id="areaDropdown" onchange="filterClasses()">
+                <option value="">AREA</option>
+                <option value="All">ALL</option>
+                <!-- Dynamic options from classData.json will be inserted here by JavaScript -->
+              </select>
+            </div>
+          </div>
+
+          <div class="row-row">
+            <div class="w-14"></div>
+            <div class="custom-select">
+              <select id="dayDropdown" onchange="filterClasses()">
+                <option value="">DAY OF THE WEEK</option>
+                <option value="All">ALL</option>
+                <!-- Dynamic options from classData.json will be inserted here by JavaScript -->
+              </select>
+            </div>
+          </div>
+
           <p id="search-message">See below for search results.</p>
+
+          <!-- Ends -->
+
           <!-- <br class="mobile"><h2 class="class-list">DOWNLOAD THE COMPLETE <a href="/StudyClasses.pdf" target="_blank"><span class="mono-med">PUNE CLASS LIST</span></a></h2> -->
         </div>
       </div>
@@ -295,8 +322,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF65Y5n98557GTO61mfiCGpqaSP9X4bpE&callback=initMap" async defer></script>
-    <script src="js/classes.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF65Y5n98557GTO61mfiCGpqaSP9X4bpE&callback=initMap&loading=async" defer></script>
+    <script src="js/classesNew.js"></script>
     <script src="js/common.js"></script>
    </body>
 </html>
