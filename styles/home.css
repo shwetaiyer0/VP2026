@@ -55,7 +55,7 @@
   text-decoration: underline;
 }
 .details img {
-  width: 7%;
+  width: 6%;
 }
 .details .row {
   gap: 3%;
@@ -246,10 +246,10 @@
     margin-inline-start: 0%;
   }
   .banner .details {
-    width: 84%;
+    width: 83%;
     padding-block: 6%;
     padding-inline: 5% 0%;
-    right: 5.1%;
+    right: 6%;
     bottom: 3.4%;
   }
   .banner .details a {
