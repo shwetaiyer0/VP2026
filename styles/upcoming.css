@@ -11,7 +11,8 @@
   color: #D6A9B0;
 }
 .banner .banner-image {
-  width: 80%;
+  /*width: 80%;*/
+  width: 90%;
   object-fit: cover;
 }
 .btn-yellow {
@@ -151,7 +152,7 @@
 .clarity-exc .row {
   align-items: center;
 }
-.clarity-exc p {
+.clarity-exc p, .clarity-exc h2 {
   width: 85%;
   display: block;
   margin-inline: auto;
@@ -368,7 +369,7 @@
     border-bottom: 1.5px solid black;
     padding-inline: 6%;
   }
-  .clarity-exc p {
+  .clarity-exc p, .clarity-exc h2 {
     width: 100%;
   }
   .clarity-exc .medium-heading {
