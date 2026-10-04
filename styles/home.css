@@ -247,7 +247,7 @@
   }
   .banner .details {
     width: 83%;
-    padding-block: 6%;
+    padding-block: 1% 2%;
     padding-inline: 5% 0%;
     right: 6%;
     bottom: 3.4%;
@@ -257,7 +257,8 @@
   }
   .banner .details h1 {
     font-size: 1.5rem;
-    margin-block: 5%;
+    /*margin-block: 5%;*/
+    margin-block: 2%;
   }
   .banner .details h2 {
     font-size: 0.9rem;
@@ -340,7 +341,7 @@
     border-top: 0;
   }
   .box-text {
-    width: 75%;
+    width: 76%;
   }
   .box-text p {
     /*padding-inline-end: 10%;*/
