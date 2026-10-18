@@ -149,7 +149,7 @@
     "area": "BHUGAON",
     "lat": 18.4976819,
     "lng": 73.7457802,
-    "location": "Tower 11, Society Office, Skyi Songbirds, Bhugaon",
+    "location": "The Poona Western Club, Library, Bhugaon",
     "contact": "Usha - 9284954326",
     "youth": true
   },
@@ -184,6 +184,17 @@
     "lng": 73.9031786,
     "location": "Antarvanam, Bungalow C4, Riverside Sultanate Society, North Main Road, Opp. Lane 5, Koregaon Park",
     "contact": "Lakshmi - 9890097968",
+    "youth": false
+  },
+  {
+    "text": "Bhagavad Gita",
+    "day": "SATURDAY",
+    "time": "11 am - 12 noon",
+    "area": "KOREGAON PARK",
+    "lat": 18.5492468,
+    "lng": 73.9031786,
+    "location": "Antarvanam, Bungalow C4, Riverside Sultanate Society, North Main Road, Opp. Lane 5, Koregaon Park",
+    "contact": "Sarisha - 9371086860",
     "youth": false
   },
   {
